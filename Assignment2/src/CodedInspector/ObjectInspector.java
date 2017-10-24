@@ -17,13 +17,35 @@ public class ObjectInspector {
 		String declaringClass = classObj.getDeclaringClass().getName();
 		System.out.println("Declaring Class:\t"+declaringClass);
 		//The name of the immediate superclass
-		String superClass = classObj.getSuperclass().getName();
-		System.out.println("Immediate Superclass:\t"+superClass);
+		if (classObj.getSuperclass() != null)
+			{String superClass = classObj.getSuperclass().getName();	
+			System.out.println("Immediate Superclass:\t"+superClass);
+			System.out.println("Inspecting Superclass\n===================================================");
+			try {
+				inspect(classObj.getSuperclass().newInstance(),isRecursive);
+				
+			}
+			catch(IllegalAccessException | InstantiationException ex)
+			{
+				ex.printStackTrace();
+			}
+			System.out.println("======================================================\nFinished Inspecting SuperClass");
+		}
 		//the name of the interfaces the class implements 
 		Class[] superInterfaces = classObj.getInterfaces();
 		for (Class inter: superInterfaces)
 		{
 			System.out.println("Implemented Interface: "+inter.getName());
+			System.out.println("Inspecting Interface\n===================================================");
+			try {
+				inspect(inter.newInstance(),isRecursive);
+				
+			}
+			catch(IllegalAccessException | InstantiationException ex)
+			{
+				ex.printStackTrace();
+			}
+			System.out.println("======================================================\nFinished Inspecting Interface");
 		}
 		
 		//The method of the class declared 
