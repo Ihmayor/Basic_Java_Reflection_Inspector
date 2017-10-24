@@ -1,7 +1,5 @@
 package CodedInspector;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.lang.reflect.Array;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -20,7 +18,7 @@ public class ObjectInspector {
 		System.out.println("Declaring Class:\t"+declaringClass);
 		//The name of the immediate superclass
 		String superClass = classObj.getSuperclass().getName();
-		System.out.println("Immediate Superclass:\t"+declaringClass);
+		System.out.println("Immediate Superclass:\t"+superClass);
 		//the name of the interfaces the class implements 
 		Class[] superInterfaces = classObj.getInterfaces();
 		for (Class inter: superInterfaces)
@@ -78,46 +76,45 @@ public class ObjectInspector {
 			//Type
 			//Modifiers
 		
-			Object val;
+			Object val = null;
 			System.out.println("Field Type: \t"+f[i].getType().getName());
 			if (f[i].getType().isPrimitive())
 			{	
-				try {
-					
-				switch(f[i].getType().getName())
+				try 
 				{
-					case "Double":
-							val = f[i].getDouble(toInspect);
-						
-						break;
-					case "Integer":
-						val = f[i].getInt(toInspect);
-						break;
-				    case "Void":
-						val = ((Void)toInspect).toString();
-						break;
-					case "Float":
-						val = f[i].getFloat(toInspect);
-						break;
-					case "Boolean":
-						val = f[i].getBoolean(toInspect);
-						break;
-					case "Char":
-						val = f[i].getChar(toInspect);
-						break;
-					case "Long":
-						val = f[i].getLong(toInspect);
-						break;
-					case "Short":
-						val = f[i].getShort(toInspect);
-						break;
-					case "Byte":
-						val = f[i].getByte(toInspect);
-						break;
-					default:
-						val = "Unattained";
-						break;
-						}
+					switch(f[i].getType().getName())
+					{
+						case "Double":
+								val = f[i].getDouble(toInspect);
+							break;
+						case "Integer":
+							val = f[i].getInt(toInspect);
+							break;
+					    case "Void":
+							val = ((Void)toInspect).toString();
+							break;
+						case "Float":
+							val = f[i].getFloat(toInspect);
+							break;
+						case "Boolean":
+							val = f[i].getBoolean(toInspect);
+							break;
+						case "Char":
+							val = f[i].getChar(toInspect);
+							break;
+						case "Long":
+							val = f[i].getLong(toInspect);
+							break;
+						case "Short":
+							val = f[i].getShort(toInspect);
+							break;
+						case "Byte":
+							val = f[i].getByte(toInspect);
+							break;
+						default:
+							val = "Unattained";
+							break;
+					}
 				}
 				 catch (IllegalArgumentException | IllegalAccessException e) {
 						e.printStackTrace();
@@ -150,7 +147,7 @@ public class ObjectInspector {
 					System.out.println("Illegal Access Exception for Field: "+f[i].getName());
 					val = "Unattained";
 				}
-			}
+				 }}
 			else
 			{
 				//If field contains object:
@@ -160,27 +157,102 @@ public class ObjectInspector {
 				else
 				{
 					//If not => print hash code.
-					val = f[i].get(toInspect).getClass().hashCode();
+					try {
+						val = f[i].get(toInspect).getClass().hashCode();
+					} catch (IllegalArgumentException | IllegalAccessException e) {
+						e.printStackTrace();
+					}
 				}
 	
 				
 			}
-			System.out.println("Field:"+ f[i].getName() +"\t Value: "+val);
+			System.out.println("Field:"+ f[i].getName() +"\t Value: "+val.toString());
 			
 		}
-		
-	
-			
 		//Must be able to handle arrays (names, component Type, length, all contents)
 		
 		//Carry over hashcodes recursively
-		
-		
-		
-		
-		
-		
 	}
+	
+	private Object getNonRecursiveValue(Object toGetVal)
+	{
+		Object val = null;
+		Class classObj = toGetVal.getClass();
+		if (classObj.isPrimitive())
+		{	
+			try 
+			{
+				switch(classObj.getName())
+				{
+					case "Double":
+							val = ((Double)toGetVal).doubleValue();
+						break;
+					case "Integer":
+						val = ((Double)toGetVal).doubleValue();
+						break;
+				    case "Void":
+						val = ((Double)toGetVal).doubleValue();
+						break;
+					case "Float":
+						val = ((Double)toGetVal).doubleValue();
+						break;
+					case "Boolean":
+						val = ((Double)toGetVal).doubleValue();
+						break;
+					case "Char":
+						val = ((Double)toGetVal).doubleValue();
+						break;
+					case "Long":
+						val = ((Double)toGetVal).doubleValue();
+						break;
+					case "Short":
+						val = ((Double)toGetVal).doubleValue();
+						break;
+					case "Byte":
+						val = ((Double)toGetVal).doubleValue();
+						break;
+					default:
+						val = "Unattained";
+						break;
+				}
+			}
+			 catch (IllegalArgumentException e) {
+					e.printStackTrace();
+			}
+		}
+		else if (classObj.isArray())
+		{	
+			//Must be able to handle arrays (names, component Type, length, all contents)
+			try {
+				   Array arrayObj = ((Array)toGetVal);
+				   System.out.println("\tArray Name: "+toGetVal.getClass().getName());
+				   System.out.println("\tArray Length: "+Array.getLength(arrayObj));
+				   System.out.println("\tArray Component Type: "+ Array.class.getComponentType().getName());
+				   System.out.println("\tArray Contents:");
+				   for (int index = 0; index < Array.getLength(arrayObj); index++)
+				   {
+					   Object obj = Array.get(arrayObj, index);
+					   val = getNonRecursiveValue(obj);
+					   System.out.println("Array Index: "+index+" Value: "+val);
+				   }
+				   val = "Array Inspected";
+			}
+			 catch (IllegalArgumentException e) {
+					{
+				System.out.println("Illegal Access Exception for Object"+toGetVal.getClass().getName());
+				val = "Unattained";
+					}
+			 }}
+		else
+		{
+				//If not => print hash code.
+					val = toGetVal.hashCode();
+		}
+
+		return val;
+	}
+	
+	
 	
 	//Method to inspected recursively w/o worry about stack overflow
 	private void inspectRecursive(Object toInspect, boolean isRecursive, int[] alreadyInspected)
