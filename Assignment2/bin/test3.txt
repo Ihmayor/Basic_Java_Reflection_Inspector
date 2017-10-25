@@ -1,0 +1,2702 @@
+Loading object inspector: ObjectInspector
+======================================================
+Running Test: ClassA
+Declaring Class:	ClassA
+Immediate Superclass:	java.lang.Object
+Inspecting Superclass
+===================================================
+Method Name: 	finalize
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	equals
+Method Name: 	toString
+Method Name: 	hashCode
+Method Name: 	getClass
+Method Name: 	clone
+Method Name: 	notify
+Method Name: 	notifyAll
+Method Name: 	registerNatives
+Declared Constructor Num: 1
+Modifier (int): 	1
+Modifier (string): 	public
+
+
+
+
+Declared Constructor Num: 0
+This superclass extends no superclass
+======================================================
+Finished Inspecting SuperClass
+
+
+
+
+Implemented Interface: java.io.Serializable
+Inspecting Interface
+===================================================
+Declared Constructors Num: 0
+=============================================================================
+Declared Fields Num: 0
+=============================================================================
+======================================================
+Finished Inspecting Interface
+This superinterface implements superinterfaces
+Implemented Interface: java.lang.Runnable
+Inspecting Interface
+===================================================
+Method Name: 	run
+Declared Constructors Num: 0
+=============================================================================
+Declared Fields Num: 0
+=============================================================================
+======================================================
+Finished Inspecting Interface
+This superinterface implements superinterfaces
+
+
+
+
+Declared Methods of Class
+======================================================
+Method Name: 	run
+Return Type: 	void
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	toString
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	setVal
+Exception Name: 	java.lang.Exception
+Parameter Name: 	int
+Return Type: 	void
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	getVal
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	printSomething
+Return Type: 	void
+Modifier (int): 	2
+Modifier (string): 	private
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: int
+Modifier (int): 	1
+Modifier (string): 	public
+Field Type: 	int
+Field:val	 Value: 3
+Field Type: 	double
+Field:val2	 Value: 0.2
+Field Type: 	boolean
+Field:val3	 Value: true
+======================================================
+======================================================
+Running Test: ClassA
+Declaring Class:	ClassA
+Immediate Superclass:	java.lang.Object
+Inspecting Superclass
+===================================================
+Method Name: 	finalize
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	equals
+Method Name: 	toString
+Method Name: 	hashCode
+Method Name: 	getClass
+Method Name: 	clone
+Method Name: 	notify
+Method Name: 	notifyAll
+Method Name: 	registerNatives
+Declared Constructor Num: 1
+Modifier (int): 	1
+Modifier (string): 	public
+
+
+
+
+Declared Constructor Num: 0
+This superclass extends no superclass
+======================================================
+Finished Inspecting SuperClass
+
+
+
+
+Implemented Interface: java.io.Serializable
+Inspecting Interface
+===================================================
+Declared Constructors Num: 0
+=============================================================================
+Declared Fields Num: 0
+=============================================================================
+======================================================
+Finished Inspecting Interface
+This superinterface implements superinterfaces
+Implemented Interface: java.lang.Runnable
+Inspecting Interface
+===================================================
+Method Name: 	run
+Declared Constructors Num: 0
+=============================================================================
+Declared Fields Num: 0
+=============================================================================
+======================================================
+Finished Inspecting Interface
+This superinterface implements superinterfaces
+
+
+
+
+Declared Methods of Class
+======================================================
+Method Name: 	run
+Return Type: 	void
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	toString
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	setVal
+Exception Name: 	java.lang.Exception
+Parameter Name: 	int
+Return Type: 	void
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	getVal
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	printSomething
+Return Type: 	void
+Modifier (int): 	2
+Modifier (string): 	private
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: int
+Modifier (int): 	1
+Modifier (string): 	public
+Field Type: 	int
+Field:val	 Value: 12
+Field Type: 	double
+Field:val2	 Value: 0.2
+Field Type: 	boolean
+Field:val3	 Value: true
+======================================================
+======================================================
+Running Test: ClassB
+Declaring Class:	ClassB
+Immediate Superclass:	ClassC
+Inspecting Superclass
+===================================================
+Method Name: 	run
+Method Name: 	toString
+Method Name: 	func3
+Method Name: 	func1
+Method Name: 	func2
+Method Name: 	func0
+Declared Constructor Num: 2
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: int
+Parameter Types: int
+Modifier (int): 	1
+Modifier (string): 	public
+
+
+
+
+Declared Constructor Num: 3
+Field Name:	val2
+Field Value:	987405879
+Field Name:	val3
+Field Value:	1555845260
+Field Name:	val4
+Field Value:	874088044
+=====================================================
+Exploring SuperClass of Super Class ClassC
+Immediate Superclass:	java.lang.Object
+Inspecting Superclass
+===================================================
+Method Name: 	finalize
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	equals
+Method Name: 	toString
+Method Name: 	hashCode
+Method Name: 	getClass
+Method Name: 	clone
+Method Name: 	notify
+Method Name: 	notifyAll
+Method Name: 	registerNatives
+Declared Constructor Num: 1
+Modifier (int): 	1
+Modifier (string): 	public
+
+
+
+
+Declared Constructor Num: 0
+This superclass extends no superclass
+======================================================
+Finished Inspecting SuperClass
+End Exploring Super Class of Super Class ClassC
+=====================================================
+======================================================
+Finished Inspecting SuperClass
+
+
+
+
+Implemented Interface: java.lang.Runnable
+Inspecting Interface
+===================================================
+Method Name: 	run
+Declared Constructors Num: 0
+=============================================================================
+Declared Fields Num: 0
+=============================================================================
+======================================================
+Finished Inspecting Interface
+This superinterface implements superinterfaces
+
+
+
+
+Declared Methods of Class
+======================================================
+Method Name: 	run
+Return Type: 	void
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	toString
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	func3
+Parameter Name: 	int
+Return Type: 	void
+Modifier (int): 	1
+Modifier (string): 	public
+Modifier (int): 	1
+Modifier (string): 	public
+Field Type: 	ClassA
+	Declaring Class:	ClassA
+	Immediate Superclass:	java.lang.Object
+	Implemented Interface: java.io.Serializable
+	Implemented Interface: java.lang.Runnable
+	Method Name: 	run
+	Return Type: 	void
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	setVal
+	Exception Name: 	java.lang.Exception
+	Parameter Name: 	int
+	Return Type: 	void
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	getVal
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	printSomething
+	Return Type: 	void
+	Modifier (int): 	2
+	Modifier (string): 	private
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: int
+	Modifier (int): 	1
+	Modifier (string): 	public
+Field:val	 Value: Inspected Inner Object
+Field Type: 	ClassA
+	Declaring Class:	ClassA
+	Immediate Superclass:	java.lang.Object
+	Implemented Interface: java.io.Serializable
+	Implemented Interface: java.lang.Runnable
+	Method Name: 	run
+	Return Type: 	void
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	setVal
+	Exception Name: 	java.lang.Exception
+	Parameter Name: 	int
+	Return Type: 	void
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	getVal
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	printSomething
+	Return Type: 	void
+	Modifier (int): 	2
+	Modifier (string): 	private
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: int
+	Modifier (int): 	1
+	Modifier (string): 	public
+Field:val2	 Value: Inspected Inner Object
+Field Type: 	ClassA
+Field:val3	 Value: Inspected Inner Object
+======================================================
+======================================================
+Running Test: ClassD
+Declaring Class:	ClassD
+Immediate Superclass:	java.lang.Object
+Inspecting Superclass
+===================================================
+Method Name: 	finalize
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	equals
+Method Name: 	toString
+Method Name: 	hashCode
+Method Name: 	getClass
+Method Name: 	clone
+Method Name: 	notify
+Method Name: 	notifyAll
+Method Name: 	registerNatives
+Declared Constructor Num: 1
+Modifier (int): 	1
+Modifier (string): 	public
+
+
+
+
+Declared Constructor Num: 0
+This superclass extends no superclass
+======================================================
+Finished Inspecting SuperClass
+
+
+
+
+
+
+
+
+Declared Methods of Class
+======================================================
+Method Name: 	toString
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	getVal3
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: int
+Modifier (int): 	1
+Modifier (string): 	public
+Field Type: 	ClassA
+	Declaring Class:	ClassA
+	Immediate Superclass:	java.lang.Object
+	Implemented Interface: java.io.Serializable
+	Implemented Interface: java.lang.Runnable
+	Method Name: 	run
+	Return Type: 	void
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	setVal
+	Exception Name: 	java.lang.Exception
+	Parameter Name: 	int
+	Return Type: 	void
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	getVal
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	printSomething
+	Return Type: 	void
+	Modifier (int): 	2
+	Modifier (string): 	private
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: int
+	Modifier (int): 	1
+	Modifier (string): 	public
+Field:val	 Value: Inspected Inner Object
+Field Type: 	ClassA
+Field:val2	 Value: Inspected Inner Object
+Field Type: 	int
+Field:val3	 Value: 32
+Field Type: 	[LClassA;
+vallarray
+	Array Length: 10
+	Array Component Type: ClassA
+	Array Contents:
+		Index: 0 Val: null
+		Index: 1 Val: null
+		Index: 2 Val: null
+		Index: 3 Val: null
+		Index: 4 Val: null
+		Index: 5 Val: null
+		Index: 6 Val: null
+		Index: 7 Val: null
+		Index: 8 Val: null
+		Index: 9 Val: null
+======================================================
+======================================================
+Running Test: ClassD
+Declaring Class:	ClassD
+Immediate Superclass:	java.lang.Object
+Inspecting Superclass
+===================================================
+Method Name: 	finalize
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	equals
+Method Name: 	toString
+Method Name: 	hashCode
+Method Name: 	getClass
+Method Name: 	clone
+Method Name: 	notify
+Method Name: 	notifyAll
+Method Name: 	registerNatives
+Declared Constructor Num: 1
+Modifier (int): 	1
+Modifier (string): 	public
+
+
+
+
+Declared Constructor Num: 0
+This superclass extends no superclass
+======================================================
+Finished Inspecting SuperClass
+
+
+
+
+
+
+
+
+Declared Methods of Class
+======================================================
+Method Name: 	toString
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	getVal3
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: int
+Modifier (int): 	1
+Modifier (string): 	public
+Field Type: 	ClassA
+	Declaring Class:	ClassA
+	Immediate Superclass:	java.lang.Object
+	Implemented Interface: java.io.Serializable
+	Implemented Interface: java.lang.Runnable
+	Method Name: 	run
+	Return Type: 	void
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	setVal
+	Exception Name: 	java.lang.Exception
+	Parameter Name: 	int
+	Return Type: 	void
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	getVal
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	printSomething
+	Return Type: 	void
+	Modifier (int): 	2
+	Modifier (string): 	private
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: int
+	Modifier (int): 	1
+	Modifier (string): 	public
+Field:val	 Value: Inspected Inner Object
+Field Type: 	ClassA
+Field:val2	 Value: Inspected Inner Object
+Field Type: 	int
+Field:val3	 Value: 34
+Field Type: 	[LClassA;
+vallarray
+	Array Length: 10
+	Array Component Type: ClassA
+	Array Contents:
+		Index: 0 Val: null
+		Index: 1 Val: null
+		Index: 2 Val: null
+		Index: 3 Val: null
+		Index: 4 Val: null
+		Index: 5 Val: null
+		Index: 6 Val: null
+		Index: 7 Val: null
+		Index: 8 Val: null
+		Index: 9 Val: null
+======================================================
+======================================================
+Running Test: [LClassB;@6c629d6e
+Declaring Class:	[LClassB;
+Immediate Superclass:	java.lang.Object
+Inspecting Superclass
+===================================================
+Method Name: 	finalize
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	equals
+Method Name: 	toString
+Method Name: 	hashCode
+Method Name: 	getClass
+Method Name: 	clone
+Method Name: 	notify
+Method Name: 	notifyAll
+Method Name: 	registerNatives
+Declared Constructor Num: 1
+Modifier (int): 	1
+Modifier (string): 	public
+
+
+
+
+Declared Constructor Num: 0
+This superclass extends no superclass
+======================================================
+Finished Inspecting SuperClass
+
+
+
+
+Implemented Interface: java.lang.Cloneable
+Inspecting Interface
+===================================================
+Declared Constructors Num: 0
+=============================================================================
+Declared Fields Num: 0
+=============================================================================
+======================================================
+Finished Inspecting Interface
+This superinterface implements superinterfaces
+Implemented Interface: java.io.Serializable
+Inspecting Interface
+===================================================
+Declared Constructors Num: 0
+=============================================================================
+Declared Fields Num: 0
+=============================================================================
+======================================================
+Finished Inspecting Interface
+This superinterface implements superinterfaces
+
+
+
+
+Declared Methods of Class
+======================================================
+======================================================
+======================================================
+Running Test: [[LClassB;@3f102e87
+Declaring Class:	[[LClassB;
+Immediate Superclass:	java.lang.Object
+Inspecting Superclass
+===================================================
+Method Name: 	finalize
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	equals
+Method Name: 	toString
+Method Name: 	hashCode
+Method Name: 	getClass
+Method Name: 	clone
+Method Name: 	notify
+Method Name: 	notifyAll
+Method Name: 	registerNatives
+Declared Constructor Num: 1
+Modifier (int): 	1
+Modifier (string): 	public
+
+
+
+
+Declared Constructor Num: 0
+This superclass extends no superclass
+======================================================
+Finished Inspecting SuperClass
+
+
+
+
+Implemented Interface: java.lang.Cloneable
+Inspecting Interface
+===================================================
+Declared Constructors Num: 0
+=============================================================================
+Declared Fields Num: 0
+=============================================================================
+======================================================
+Finished Inspecting Interface
+This superinterface implements superinterfaces
+Implemented Interface: java.io.Serializable
+Inspecting Interface
+===================================================
+Declared Constructors Num: 0
+=============================================================================
+Declared Fields Num: 0
+=============================================================================
+======================================================
+Finished Inspecting Interface
+This superinterface implements superinterfaces
+
+
+
+
+Declared Methods of Class
+======================================================
+======================================================
+======================================================
+Running Test: Test String
+Declaring Class:	java.lang.String
+Immediate Superclass:	java.lang.Object
+Inspecting Superclass
+===================================================
+Method Name: 	finalize
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	wait
+Method Name: 	equals
+Method Name: 	toString
+Method Name: 	hashCode
+Method Name: 	getClass
+Method Name: 	clone
+Method Name: 	notify
+Method Name: 	notifyAll
+Method Name: 	registerNatives
+Declared Constructor Num: 1
+Modifier (int): 	1
+Modifier (string): 	public
+
+
+
+
+Declared Constructor Num: 0
+This superclass extends no superclass
+======================================================
+Finished Inspecting SuperClass
+
+
+
+
+Implemented Interface: java.io.Serializable
+Inspecting Interface
+===================================================
+Declared Constructors Num: 0
+=============================================================================
+Declared Fields Num: 0
+=============================================================================
+======================================================
+Finished Inspecting Interface
+This superinterface implements superinterfaces
+Implemented Interface: java.lang.Comparable
+Inspecting Interface
+===================================================
+Method Name: 	compareTo
+Declared Constructors Num: 0
+=============================================================================
+Declared Fields Num: 0
+=============================================================================
+======================================================
+Finished Inspecting Interface
+This superinterface implements superinterfaces
+Implemented Interface: java.lang.CharSequence
+Inspecting Interface
+===================================================
+Method Name: 	length
+Method Name: 	toString
+Method Name: 	charAt
+Method Name: 	subSequence
+Method Name: 	chars
+Method Name: 	codePoints
+Method Name: 	lambda$chars$0
+Method Name: 	lambda$codePoints$1
+Declared Constructors Num: 0
+=============================================================================
+Declared Fields Num: 0
+=============================================================================
+======================================================
+Finished Inspecting Interface
+This superinterface implements superinterfaces
+
+
+
+
+Declared Methods of Class
+======================================================
+Method Name: 	coder
+Return Type: 	byte
+Modifier (int): 	0
+Modifier (string): 	
+Method Name: 	equals
+Parameter Name: 	java.lang.Object
+Return Type: 	boolean
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	length
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	toString
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	hashCode
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	getChars
+Parameter Name: 	int
+Parameter Name: 	int
+Parameter Name: 	[C
+Parameter Name: 	int
+Return Type: 	void
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	compareTo
+Parameter Name: 	java.lang.Object
+Return Type: 	int
+Modifier (int): 	4161
+Modifier (string): 	public volatile
+Method Name: 	compareTo
+Parameter Name: 	java.lang.String
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	indexOf
+Parameter Name: 	java.lang.String
+Parameter Name: 	int
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	indexOf
+Parameter Name: 	java.lang.String
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	indexOf
+Parameter Name: 	int
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	indexOf
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	indexOf
+Parameter Name: 	[B
+Parameter Name: 	byte
+Parameter Name: 	int
+Parameter Name: 	java.lang.String
+Parameter Name: 	int
+Return Type: 	int
+Modifier (int): 	8
+Modifier (string): 	static
+Method Name: 	checkIndex
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	void
+Modifier (int): 	8
+Modifier (string): 	static
+Method Name: 	valueOf
+Parameter Name: 	boolean
+Return Type: 	java.lang.String
+Modifier (int): 	9
+Modifier (string): 	public static
+Method Name: 	valueOf
+Parameter Name: 	float
+Return Type: 	java.lang.String
+Modifier (int): 	9
+Modifier (string): 	public static
+Method Name: 	valueOf
+Parameter Name: 	[C
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	java.lang.String
+Modifier (int): 	9
+Modifier (string): 	public static
+Method Name: 	valueOf
+Parameter Name: 	[C
+Return Type: 	java.lang.String
+Modifier (int): 	9
+Modifier (string): 	public static
+Method Name: 	valueOf
+Parameter Name: 	java.lang.Object
+Return Type: 	java.lang.String
+Modifier (int): 	9
+Modifier (string): 	public static
+Method Name: 	valueOf
+Parameter Name: 	int
+Return Type: 	java.lang.String
+Modifier (int): 	9
+Modifier (string): 	public static
+Method Name: 	valueOf
+Parameter Name: 	long
+Return Type: 	java.lang.String
+Modifier (int): 	9
+Modifier (string): 	public static
+Method Name: 	valueOf
+Parameter Name: 	double
+Return Type: 	java.lang.String
+Modifier (int): 	9
+Modifier (string): 	public static
+Method Name: 	valueOf
+Parameter Name: 	char
+Return Type: 	java.lang.String
+Modifier (int): 	9
+Modifier (string): 	public static
+Method Name: 	rangeCheck
+Parameter Name: 	[C
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	java.lang.Void
+Modifier (int): 	10
+Modifier (string): 	private static
+Method Name: 	checkBoundsOffCount
+Parameter Name: 	int
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	void
+Modifier (int): 	8
+Modifier (string): 	static
+Method Name: 	isEmpty
+Return Type: 	boolean
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	charAt
+Parameter Name: 	int
+Return Type: 	char
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	isLatin1
+Return Type: 	boolean
+Modifier (int): 	2
+Modifier (string): 	private
+Method Name: 	codePointAt
+Parameter Name: 	int
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	codePointBefore
+Parameter Name: 	int
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	codePointCount
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	offsetByCodePoints
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	checkBoundsBeginEnd
+Parameter Name: 	int
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	void
+Modifier (int): 	8
+Modifier (string): 	static
+Method Name: 	getBytes
+Parameter Name: 	[B
+Parameter Name: 	int
+Parameter Name: 	byte
+Return Type: 	void
+Modifier (int): 	0
+Modifier (string): 	
+Method Name: 	getBytes
+Parameter Name: 	java.nio.charset.Charset
+Return Type: 	[B
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	getBytes
+Return Type: 	[B
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	getBytes
+Exception Name: 	java.io.UnsupportedEncodingException
+Parameter Name: 	java.lang.String
+Return Type: 	[B
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	getBytes
+Parameter Name: 	int
+Parameter Name: 	int
+Parameter Name: 	[B
+Parameter Name: 	int
+Return Type: 	void
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	contentEquals
+Parameter Name: 	java.lang.CharSequence
+Return Type: 	boolean
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	contentEquals
+Parameter Name: 	java.lang.StringBuffer
+Return Type: 	boolean
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	nonSyncContentEquals
+Parameter Name: 	java.lang.AbstractStringBuilder
+Return Type: 	boolean
+Modifier (int): 	2
+Modifier (string): 	private
+Method Name: 	equalsIgnoreCase
+Parameter Name: 	java.lang.String
+Return Type: 	boolean
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	regionMatches
+Parameter Name: 	boolean
+Parameter Name: 	int
+Parameter Name: 	java.lang.String
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	boolean
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	regionMatches
+Parameter Name: 	int
+Parameter Name: 	java.lang.String
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	boolean
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	compareToIgnoreCase
+Parameter Name: 	java.lang.String
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	startsWith
+Parameter Name: 	java.lang.String
+Return Type: 	boolean
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	startsWith
+Parameter Name: 	java.lang.String
+Parameter Name: 	int
+Return Type: 	boolean
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	endsWith
+Parameter Name: 	java.lang.String
+Return Type: 	boolean
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	lastIndexOf
+Parameter Name: 	java.lang.String
+Parameter Name: 	int
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	lastIndexOf
+Parameter Name: 	java.lang.String
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	lastIndexOf
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	lastIndexOf
+Parameter Name: 	int
+Return Type: 	int
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	lastIndexOf
+Parameter Name: 	[B
+Parameter Name: 	byte
+Parameter Name: 	int
+Parameter Name: 	java.lang.String
+Parameter Name: 	int
+Return Type: 	int
+Modifier (int): 	8
+Modifier (string): 	static
+Method Name: 	substring
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	substring
+Parameter Name: 	int
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	subSequence
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	java.lang.CharSequence
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	concat
+Parameter Name: 	java.lang.String
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	replace
+Parameter Name: 	java.lang.CharSequence
+Parameter Name: 	java.lang.CharSequence
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	replace
+Parameter Name: 	char
+Parameter Name: 	char
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	matches
+Parameter Name: 	java.lang.String
+Return Type: 	boolean
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	contains
+Parameter Name: 	java.lang.CharSequence
+Return Type: 	boolean
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	replaceFirst
+Parameter Name: 	java.lang.String
+Parameter Name: 	java.lang.String
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	replaceAll
+Parameter Name: 	java.lang.String
+Parameter Name: 	java.lang.String
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	split
+Parameter Name: 	java.lang.String
+Parameter Name: 	int
+Return Type: 	[Ljava.lang.String;
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	split
+Parameter Name: 	java.lang.String
+Return Type: 	[Ljava.lang.String;
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	join
+Parameter Name: 	java.lang.CharSequence
+Parameter Name: 	[Ljava.lang.CharSequence;
+Return Type: 	java.lang.String
+Modifier (int): 	137
+Modifier (string): 	public static transient
+Method Name: 	join
+Parameter Name: 	java.lang.CharSequence
+Parameter Name: 	java.lang.Iterable
+Return Type: 	java.lang.String
+Modifier (int): 	9
+Modifier (string): 	public static
+Method Name: 	toLowerCase
+Parameter Name: 	java.util.Locale
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	toLowerCase
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	toUpperCase
+Parameter Name: 	java.util.Locale
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	toUpperCase
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	trim
+Return Type: 	java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	chars
+Return Type: 	java.util.stream.IntStream
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	codePoints
+Return Type: 	java.util.stream.IntStream
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	toCharArray
+Return Type: 	[C
+Modifier (int): 	1
+Modifier (string): 	public
+Method Name: 	format
+Parameter Name: 	java.util.Locale
+Parameter Name: 	java.lang.String
+Parameter Name: 	[Ljava.lang.Object;
+Return Type: 	java.lang.String
+Modifier (int): 	137
+Modifier (string): 	public static transient
+Method Name: 	format
+Parameter Name: 	java.lang.String
+Parameter Name: 	[Ljava.lang.Object;
+Return Type: 	java.lang.String
+Modifier (int): 	137
+Modifier (string): 	public static transient
+Method Name: 	copyValueOf
+Parameter Name: 	[C
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	java.lang.String
+Modifier (int): 	9
+Modifier (string): 	public static
+Method Name: 	copyValueOf
+Parameter Name: 	[C
+Return Type: 	java.lang.String
+Modifier (int): 	9
+Modifier (string): 	public static
+Method Name: 	intern
+Return Type: 	java.lang.String
+Modifier (int): 	257
+Modifier (string): 	public native
+Method Name: 	checkOffset
+Parameter Name: 	int
+Parameter Name: 	int
+Return Type: 	void
+Modifier (int): 	8
+Modifier (string): 	static
+Method Name: 	access$100
+Parameter Name: 	java.lang.String
+Return Type: 	[B
+Modifier (int): 	4104
+Modifier (string): 	static
+Method Name: 	access$200
+Parameter Name: 	java.lang.String
+Return Type: 	boolean
+Modifier (int): 	4104
+Modifier (string): 	static
+Parameter Types: [B
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: [B
+Parameter Types: int
+Parameter Types: int
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: [B
+Parameter Types: java.nio.charset.Charset
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: [B
+Parameter Types: java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: [B
+Parameter Types: int
+Parameter Types: int
+Parameter Types: java.nio.charset.Charset
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: java.lang.StringBuilder
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: java.lang.StringBuffer
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: [C
+Parameter Types: int
+Parameter Types: int
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: [C
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: [B
+Parameter Types: int
+Parameter Types: int
+Parameter Types: java.lang.String
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: [B
+Parameter Types: int
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: [B
+Parameter Types: int
+Parameter Types: int
+Parameter Types: int
+Modifier (int): 	1
+Modifier (string): 	public
+Parameter Types: [I
+Parameter Types: int
+Parameter Types: int
+Modifier (int): 	1
+Modifier (string): 	public
+Field Type: 	[B
+value
+	Array Length: 11
+	Array Component Type: byte
+	Array Contents:
+	Declaring Class:	java.lang.Byte
+	Immediate Superclass:	java.lang.Number
+	Implemented Interface: java.lang.Comparable
+	Method Name: 	equals
+	Parameter Name: 	java.lang.Object
+	Return Type: 	boolean
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Parameter Name: 	byte
+	Return Type: 	java.lang.String
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Byte
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Object
+	Return Type: 	int
+	Modifier (int): 	4161
+	Modifier (string): 	public volatile
+	Method Name: 	byteValue
+	Return Type: 	byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	shortValue
+	Return Type: 	short
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	intValue
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	longValue
+	Return Type: 	long
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	floatValue
+	Return Type: 	float
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	doubleValue
+	Return Type: 	double
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Parameter Name: 	byte
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	decode
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compare
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedLong
+	Parameter Name: 	byte
+	Return Type: 	long
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedInt
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compareUnsigned
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Parameter Types: byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Declaring Class:	java.lang.Byte
+	Immediate Superclass:	java.lang.Number
+	Implemented Interface: java.lang.Comparable
+	Method Name: 	equals
+	Parameter Name: 	java.lang.Object
+	Return Type: 	boolean
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Parameter Name: 	byte
+	Return Type: 	java.lang.String
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Byte
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Object
+	Return Type: 	int
+	Modifier (int): 	4161
+	Modifier (string): 	public volatile
+	Method Name: 	byteValue
+	Return Type: 	byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	shortValue
+	Return Type: 	short
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	intValue
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	longValue
+	Return Type: 	long
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	floatValue
+	Return Type: 	float
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	doubleValue
+	Return Type: 	double
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Parameter Name: 	byte
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	decode
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compare
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedLong
+	Parameter Name: 	byte
+	Return Type: 	long
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedInt
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compareUnsigned
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Parameter Types: byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Declaring Class:	java.lang.Byte
+	Immediate Superclass:	java.lang.Number
+	Implemented Interface: java.lang.Comparable
+	Method Name: 	equals
+	Parameter Name: 	java.lang.Object
+	Return Type: 	boolean
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Parameter Name: 	byte
+	Return Type: 	java.lang.String
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Byte
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Object
+	Return Type: 	int
+	Modifier (int): 	4161
+	Modifier (string): 	public volatile
+	Method Name: 	byteValue
+	Return Type: 	byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	shortValue
+	Return Type: 	short
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	intValue
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	longValue
+	Return Type: 	long
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	floatValue
+	Return Type: 	float
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	doubleValue
+	Return Type: 	double
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Parameter Name: 	byte
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	decode
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compare
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedLong
+	Parameter Name: 	byte
+	Return Type: 	long
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedInt
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compareUnsigned
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Parameter Types: byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Declaring Class:	java.lang.Byte
+	Immediate Superclass:	java.lang.Number
+	Implemented Interface: java.lang.Comparable
+	Method Name: 	equals
+	Parameter Name: 	java.lang.Object
+	Return Type: 	boolean
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Parameter Name: 	byte
+	Return Type: 	java.lang.String
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Byte
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Object
+	Return Type: 	int
+	Modifier (int): 	4161
+	Modifier (string): 	public volatile
+	Method Name: 	byteValue
+	Return Type: 	byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	shortValue
+	Return Type: 	short
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	intValue
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	longValue
+	Return Type: 	long
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	floatValue
+	Return Type: 	float
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	doubleValue
+	Return Type: 	double
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Parameter Name: 	byte
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	decode
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compare
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedLong
+	Parameter Name: 	byte
+	Return Type: 	long
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedInt
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compareUnsigned
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Parameter Types: byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Declaring Class:	java.lang.Byte
+	Immediate Superclass:	java.lang.Number
+	Implemented Interface: java.lang.Comparable
+	Method Name: 	equals
+	Parameter Name: 	java.lang.Object
+	Return Type: 	boolean
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Parameter Name: 	byte
+	Return Type: 	java.lang.String
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Byte
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Object
+	Return Type: 	int
+	Modifier (int): 	4161
+	Modifier (string): 	public volatile
+	Method Name: 	byteValue
+	Return Type: 	byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	shortValue
+	Return Type: 	short
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	intValue
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	longValue
+	Return Type: 	long
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	floatValue
+	Return Type: 	float
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	doubleValue
+	Return Type: 	double
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Parameter Name: 	byte
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	decode
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compare
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedLong
+	Parameter Name: 	byte
+	Return Type: 	long
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedInt
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compareUnsigned
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Parameter Types: byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Declaring Class:	java.lang.Byte
+	Immediate Superclass:	java.lang.Number
+	Implemented Interface: java.lang.Comparable
+	Method Name: 	equals
+	Parameter Name: 	java.lang.Object
+	Return Type: 	boolean
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Parameter Name: 	byte
+	Return Type: 	java.lang.String
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Byte
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Object
+	Return Type: 	int
+	Modifier (int): 	4161
+	Modifier (string): 	public volatile
+	Method Name: 	byteValue
+	Return Type: 	byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	shortValue
+	Return Type: 	short
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	intValue
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	longValue
+	Return Type: 	long
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	floatValue
+	Return Type: 	float
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	doubleValue
+	Return Type: 	double
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Parameter Name: 	byte
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	decode
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compare
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedLong
+	Parameter Name: 	byte
+	Return Type: 	long
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedInt
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compareUnsigned
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Parameter Types: byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Declaring Class:	java.lang.Byte
+	Immediate Superclass:	java.lang.Number
+	Implemented Interface: java.lang.Comparable
+	Method Name: 	equals
+	Parameter Name: 	java.lang.Object
+	Return Type: 	boolean
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Parameter Name: 	byte
+	Return Type: 	java.lang.String
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Byte
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Object
+	Return Type: 	int
+	Modifier (int): 	4161
+	Modifier (string): 	public volatile
+	Method Name: 	byteValue
+	Return Type: 	byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	shortValue
+	Return Type: 	short
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	intValue
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	longValue
+	Return Type: 	long
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	floatValue
+	Return Type: 	float
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	doubleValue
+	Return Type: 	double
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Parameter Name: 	byte
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	decode
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compare
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedLong
+	Parameter Name: 	byte
+	Return Type: 	long
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedInt
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compareUnsigned
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Parameter Types: byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Declaring Class:	java.lang.Byte
+	Immediate Superclass:	java.lang.Number
+	Implemented Interface: java.lang.Comparable
+	Method Name: 	equals
+	Parameter Name: 	java.lang.Object
+	Return Type: 	boolean
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Parameter Name: 	byte
+	Return Type: 	java.lang.String
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Byte
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Object
+	Return Type: 	int
+	Modifier (int): 	4161
+	Modifier (string): 	public volatile
+	Method Name: 	byteValue
+	Return Type: 	byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	shortValue
+	Return Type: 	short
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	intValue
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	longValue
+	Return Type: 	long
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	floatValue
+	Return Type: 	float
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	doubleValue
+	Return Type: 	double
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Parameter Name: 	byte
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	decode
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compare
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedLong
+	Parameter Name: 	byte
+	Return Type: 	long
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedInt
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compareUnsigned
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Parameter Types: byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Declaring Class:	java.lang.Byte
+	Immediate Superclass:	java.lang.Number
+	Implemented Interface: java.lang.Comparable
+	Method Name: 	equals
+	Parameter Name: 	java.lang.Object
+	Return Type: 	boolean
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Parameter Name: 	byte
+	Return Type: 	java.lang.String
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Byte
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Object
+	Return Type: 	int
+	Modifier (int): 	4161
+	Modifier (string): 	public volatile
+	Method Name: 	byteValue
+	Return Type: 	byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	shortValue
+	Return Type: 	short
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	intValue
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	longValue
+	Return Type: 	long
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	floatValue
+	Return Type: 	float
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	doubleValue
+	Return Type: 	double
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Parameter Name: 	byte
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	decode
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compare
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedLong
+	Parameter Name: 	byte
+	Return Type: 	long
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedInt
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compareUnsigned
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Parameter Types: byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Declaring Class:	java.lang.Byte
+	Immediate Superclass:	java.lang.Number
+	Implemented Interface: java.lang.Comparable
+	Method Name: 	equals
+	Parameter Name: 	java.lang.Object
+	Return Type: 	boolean
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Parameter Name: 	byte
+	Return Type: 	java.lang.String
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Byte
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Object
+	Return Type: 	int
+	Modifier (int): 	4161
+	Modifier (string): 	public volatile
+	Method Name: 	byteValue
+	Return Type: 	byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	shortValue
+	Return Type: 	short
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	intValue
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	longValue
+	Return Type: 	long
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	floatValue
+	Return Type: 	float
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	doubleValue
+	Return Type: 	double
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Parameter Name: 	byte
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	decode
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compare
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedLong
+	Parameter Name: 	byte
+	Return Type: 	long
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedInt
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compareUnsigned
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Parameter Types: byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Declaring Class:	java.lang.Byte
+	Immediate Superclass:	java.lang.Number
+	Implemented Interface: java.lang.Comparable
+	Method Name: 	equals
+	Parameter Name: 	java.lang.Object
+	Return Type: 	boolean
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Return Type: 	java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	toString
+	Parameter Name: 	byte
+	Return Type: 	java.lang.String
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	hashCode
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Byte
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	compareTo
+	Parameter Name: 	java.lang.Object
+	Return Type: 	int
+	Modifier (int): 	4161
+	Modifier (string): 	public volatile
+	Method Name: 	byteValue
+	Return Type: 	byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	shortValue
+	Return Type: 	short
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	intValue
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	longValue
+	Return Type: 	long
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	floatValue
+	Return Type: 	float
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	doubleValue
+	Return Type: 	double
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	valueOf
+	Parameter Name: 	byte
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	decode
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	java.lang.Byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compare
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedLong
+	Parameter Name: 	byte
+	Return Type: 	long
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	toUnsignedInt
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	parseByte
+	Exception Name: 	java.lang.NumberFormatException
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	int
+	Return Type: 	byte
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Method Name: 	compareUnsigned
+	Parameter Name: 	byte
+	Parameter Name: 	byte
+	Return Type: 	int
+	Modifier (int): 	9
+	Modifier (string): 	public static
+	Parameter Types: byte
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Parameter Types: java.lang.String
+	Modifier (int): 	1
+	Modifier (string): 	public
+Field Type: 	byte
+Field:coder	 Value: 0
+Field Type: 	int
+Field:hash	 Value: 432811871
+Field Type: 	long
+Field:serialVersionUID	 Value: -6849794470754667710
+Field Type: 	boolean
+Field:COMPACT_STRINGS	 Value: true
+Field Type: 	[Ljava.io.ObjectStreamField;
+serialPersistentFields
+	Array Length: 0
+	Array Component Type: java.io.ObjectStreamField
+	Array Contents:
+Field Type: 	java.util.Comparator
+	Declaring Class:	java.lang.String$CaseInsensitiveComparator
+	Immediate Superclass:	java.lang.Object
+	Implemented Interface: java.util.Comparator
+	Implemented Interface: java.io.Serializable
+	Method Name: 	compare
+	Parameter Name: 	java.lang.Object
+	Parameter Name: 	java.lang.Object
+	Return Type: 	int
+	Modifier (int): 	4161
+	Modifier (string): 	public volatile
+	Method Name: 	compare
+	Parameter Name: 	java.lang.String
+	Parameter Name: 	java.lang.String
+	Return Type: 	int
+	Modifier (int): 	1
+	Modifier (string): 	public
+	Method Name: 	readResolve
+	Return Type: 	java.lang.Object
+	Modifier (int): 	2
+	Modifier (string): 	private
+Field:CASE_INSENSITIVE_ORDER	 Value: Inspected Inner Object
+Field Type: 	byte
+Field:LATIN1	 Value: 0
+Field Type: 	byte
+Field:UTF16	 Value: 1
+======================================================

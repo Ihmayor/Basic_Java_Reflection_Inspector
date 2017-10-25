@@ -14,10 +14,152 @@ public class ObjectInspector {
 		// The name of the declaring class
 		String declaringClass = classObj.getName();
 		System.out.println("Declaring Class:\t" + declaringClass);
+
+		inspectSuperClass(toInspect);
+		
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		inspectSuperInterface(toInspect);
+				System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+		// The method of the class declared
+		Method[] declaredMethods = classObj.getDeclaredMethods();
+
+		System.out.println("Declared Methods of Class");
+		System.out.println("======================================================");
+		for (Method m : declaredMethods) {
+			System.out.println();
+			System.out.println();
+			System.out.println("======================================================");
+			// Find each:
+			System.out.println("Method Name: \t" + m.getName());
+			// Exceptions thrown
+			System.out.println("Method Exceptions");
+			Class[] exceptions = m.getExceptionTypes();
+			for (Class e : exceptions) {
+				System.out.println("Exception Name: \t" + e.getName());
+			}
+			// Parameter types
+			System.out.println("Method Parameters");
+			Class[] parameters = m.getParameterTypes();
+			for (Class param : parameters) {
+				System.out.println("Parameter Name: \t" + param.getName());
+			}
+			// return types
+			System.out.println("Method Return Type: \t" + m.getReturnType().getName());
+			// modifiers
+			System.out.println("Method Modifier (int): \t" + m.getModifiers());
+			System.out.println("Method Modifier (string): \t" + Modifier.toString(m.getModifiers()));
+		}
+
+		Constructor[] constructors = classObj.getDeclaredConstructors();
+		// Get all Constructors
+		System.out.println();
+		System.out.println();
+		System.out.println("Declared Constructors Amount: "+constructors.length);
+		for (Constructor c : constructors) {
+			System.out.println("Constructor");
+			System.out.println("==============================================================================");
+			// Param types
+			for (Class param : c.getParameterTypes()) {
+				System.out.println("Parameter Types: " + param.getName());
+			}
+
+			// modifiers
+			System.out.println("Modifier (int): \t" + c.getModifiers());
+			System.out.println("Modifier (string): \t" + Modifier.toString(c.getModifiers()));
+		}
+
+		InspectFields(toInspect, classObj, isRecursive, new int[] {});
+		// Must be able to handle arrays (names, component Type, length, all contents)
+
+		// Carry over hashcodes recursively
+	}
+	
+
+	private void inspectSuperInterface(Object childObj)
+	{
+		
+		Class classObj = childObj.getClass();
+		// the name of the interfaces the class implements
+				Class[] superInterfaces = classObj.getInterfaces();
+				for (Class inter : superInterfaces) {
+					System.out.println("Implemented Interface: " + inter.getName());
+					System.out.println("Inspecting Interface");
+					System.out.println("===================================================");
+					for (Method m : inter.getDeclaredMethods()) {
+						// Find each:
+						System.out.println("Method Name: \t" + m.getName());
+
+						/*
+						 * //Exceptions thrown Class[] exceptions = m.getExceptionTypes(); for(Class
+						 * e:exceptions) { System.out.println("Exception Name: \t"+e.getName()); }
+						 * //Parameter types Class[] parameters = m.getParameterTypes(); for(Class
+						 * param:parameters) { System.out.println("Parameter Name: \t"+param.getName());
+						 * } //return types
+						 * System.out.println("Return Type: \t"+m.getReturnType().getName());
+						 * //modifiers System.out.println("Modifier (int): \t"+m.getModifiers());
+						 * System.out.println("Modifier (string): \t"+Modifier.toString(m.getModifiers()
+						 * ));
+						 */
+					}
+					
+					System.out.println("Declared Constructors Num: "+inter.getDeclaredConstructors().length);
+					System.out.println("=============================================================================");
+					for (Constructor c : inter.getDeclaredConstructors()) {
+						// Param types
+						for (Class param : c.getParameterTypes()) {
+							System.out.println("Parameter Types: " + param.getName());
+						}
+
+						// modifiers
+						System.out.println("Modifier (int): \t" + c.getModifiers());
+						System.out.println("Modifier (string): \t" + Modifier.toString(c.getModifiers()));
+					}
+					System.out.println();
+					System.out.println();
+					System.out.println("Declared Fields Num: "+inter.getDeclaredConstructors().length);
+					System.out.println("=============================================================================");
+					for (Field f : inter.getDeclaredFields()) {
+						System.out.println("Field Name:\t" + f.getName());
+						try {
+							System.out.println("Field Value:\t" + getNonRecursiveValue(f.get(inter)));
+						} catch (IllegalArgumentException | IllegalAccessException e) {
+							e.printStackTrace();
+						}
+					}
+					System.out.println("======================================================");
+					System.out.println("Finished Inspecting Interface");
+					
+					if (inter.getInterfaces().length > 0) {
+						System.out.println("=====================================================");
+						System.out.println("Exploring Super Interfaces of superinterface " + inter.getName() );
+						inspectSuperInterface(inter);
+						System.out.println("End Exploring Super Interfaces of superinterface "+ inter.getName());
+						System.out.println("=====================================================");
+					}
+					else
+					{
+						System.out.println("This superinterface implements no other superinterfaces");
+					}
+				}
+
+	}
+	
+	private void inspectSuperClass(Object childObj)
+	{
+		
+		Class classObj = childObj.getClass();
 		// The name of the immediate superclass
 		if (classObj.getSuperclass() != null) {
 			System.out.println("Immediate Superclass:\t" + classObj.getSuperclass().getName());
-			System.out.println("Inspecting Superclass\n===================================================");
+			System.out.println("Inspecting Superclass");
+			System.out.println("===================================================");
 			Class superClass = classObj.getSuperclass();
 
 			for (Method m : superClass.getDeclaredMethods()) {
@@ -36,6 +178,7 @@ public class ObjectInspector {
 				 * ));
 				 */
 			}
+			System.out.println("Declared Constructor Num: "+superClass.getDeclaredConstructors().length);;
 			for (Constructor c : superClass.getDeclaredConstructors()) {
 				// Param types
 				for (Class param : c.getParameterTypes()) {
@@ -46,103 +189,36 @@ public class ObjectInspector {
 				System.out.println("Modifier (int): \t" + c.getModifiers());
 				System.out.println("Modifier (string): \t" + Modifier.toString(c.getModifiers()));
 			}
-			for (Field f : superClass.getDeclaredFields()) {
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println("Declared Constructor Num: "+superClass.getDeclaredFields().length);;
+				for (Field f : superClass.getDeclaredFields()) {
 				System.out.println("Field Name:\t" + f.getName());
 				f.setAccessible(true);
 				try {
-					System.out.println("Field Value:\t" + getNonRecursiveValue(f.get(toInspect)));
+					System.out.println("Field Value:\t" + getNonRecursiveValue(f.get(childObj)));
 				} catch (IllegalArgumentException | IllegalAccessException e) {
 					e.printStackTrace();
 				}
 			}
+			if (superClass.getSuperclass() != null) {
+				System.out.println("=====================================================");
+				System.out.println("Exploring SuperClass of Super Class " + superClass.getName() );
+				inspectSuperClass(superClass);
+				System.out.println("End Exploring Super Class of Super Class "+ superClass.getName());
+				System.out.println("=====================================================");
+			}
+			else
+			{
+				System.out.println("This superclass extends no superclass");
+			}
 
-			System.out
-					.println("======================================================\nFinished Inspecting SuperClass");
+			
+			System.out.println("======================================================");
+			System.out.println("Finished Inspecting SuperClass");
 		}
-		System.out.println();
-		System.out.println();
-		// the name of the interfaces the class implements
-		Class[] superInterfaces = classObj.getInterfaces();
-		for (Class inter : superInterfaces) {
-			System.out.println("Implemented Interface: " + inter.getName());
-			System.out.println("Inspecting Interface\n===================================================");
-			for (Method m : inter.getDeclaredMethods()) {
-				// Find each:
-				System.out.println("Method Name: \t" + m.getName());
-
-				/*
-				 * //Exceptions thrown Class[] exceptions = m.getExceptionTypes(); for(Class
-				 * e:exceptions) { System.out.println("Exception Name: \t"+e.getName()); }
-				 * //Parameter types Class[] parameters = m.getParameterTypes(); for(Class
-				 * param:parameters) { System.out.println("Parameter Name: \t"+param.getName());
-				 * } //return types
-				 * System.out.println("Return Type: \t"+m.getReturnType().getName());
-				 * //modifiers System.out.println("Modifier (int): \t"+m.getModifiers());
-				 * System.out.println("Modifier (string): \t"+Modifier.toString(m.getModifiers()
-				 * ));
-				 */
-			}
-			for (Constructor c : inter.getDeclaredConstructors()) {
-				// Param types
-				for (Class param : c.getParameterTypes()) {
-					System.out.println("Parameter Types: " + param.getName());
-				}
-
-				// modifiers
-				System.out.println("Modifier (int): \t" + c.getModifiers());
-				System.out.println("Modifier (string): \t" + Modifier.toString(c.getModifiers()));
-			}
-			for (Field f : inter.getDeclaredFields()) {
-				System.out.println("Field Name:\t" + f.getName());
-				try {
-					System.out.println("Field Value:\t" + getNonRecursiveValue(f.get(inter)));
-				} catch (IllegalArgumentException | IllegalAccessException e) {
-					e.printStackTrace();
-				}
-			}
-			System.out.println("======================================================\nFinished Inspecting Interface");
-		}
-
-		// The method of the class declared
-		Method[] declaredMethods = classObj.getDeclaredMethods();
-
-		for (Method m : declaredMethods) {
-			// Find each:
-			System.out.println("Method Name: \t" + m.getName());
-			// Exceptions thrown
-			Class[] exceptions = m.getExceptionTypes();
-			for (Class e : exceptions) {
-				System.out.println("Exception Name: \t" + e.getName());
-			}
-			// Parameter types
-			Class[] parameters = m.getParameterTypes();
-			for (Class param : parameters) {
-				System.out.println("Parameter Name: \t" + param.getName());
-			}
-			// return types
-			System.out.println("Return Type: \t" + m.getReturnType().getName());
-			// modifiers
-			System.out.println("Modifier (int): \t" + m.getModifiers());
-			System.out.println("Modifier (string): \t" + Modifier.toString(m.getModifiers()));
-		}
-
-		Constructor[] constructors = classObj.getConstructors();
-		// Get all Constructors
-		for (Constructor c : constructors) {
-			// Param types
-			for (Class param : c.getParameterTypes()) {
-				System.out.println("Parameter Types: " + param.getName());
-			}
-
-			// modifiers
-			System.out.println("Modifier (int): \t" + c.getModifiers());
-			System.out.println("Modifier (string): \t" + Modifier.toString(c.getModifiers()));
-		}
-
-		InspectFields(toInspect, classObj, isRecursive, new int[] {});
-		// Must be able to handle arrays (names, component Type, length, all contents)
-
-		// Carry over hashcodes recursively
 	}
 
 	private void InspectFields(Object toInspect, Class classObj, boolean isRecursive, int[] alreadyInspected) {
@@ -165,6 +241,10 @@ public class ObjectInspector {
 			}
 
 				//The fields the class declares
+
+			System.out.println();
+			System.out.println();
+System.out.println("Declared Fields of Class")	;
 				Field[] f = classObj.getDeclaredFields();		
 
 				for (int i = 0; i<f.length; i++)
@@ -173,11 +253,14 @@ public class ObjectInspector {
 					//Modifiers
 					f[i].setAccessible(true);
 					Object val = null;
+					System.out.println("=============================================");
+					System.out.println("Field Name: \t"+f[i].getName());
 					System.out.println("Field Type: \t"+f[i].getType().getName());
 					if (f[i].getType().isPrimitive())
 					{	
 						try 
 						{
+
 							switch(f[i].getType().getName())
 							{
 								case "Double":
@@ -308,7 +391,7 @@ public class ObjectInspector {
 						
 					}
 					if (val != null)
-						System.out.println("Field:"+ f[i].getName() +"\t Value: "+val.toString());
+						System.out.println("Field Value: "+val.toString());
 				}
 			}
 
@@ -409,37 +492,52 @@ public class ObjectInspector {
 				superClass = classObj.getSuperclass().getName();
 			System.out.println(tabOver + "Immediate Superclass:\t" + superClass);
 			// the name of the interfaces the class implements
+			System.out.println(tabOver+"Implemented Interfaces of Class");
+			System.out.println(tabOver+"======================================================");
 			Class[] superInterfaces = classObj.getInterfaces();
 			for (Class inter : superInterfaces) {
 				System.out.println(tabOver + "Implemented Interface: " + inter.getName());
 			}
 
 			// The method of the class declared
+			System.out.println(tabOver+"Declared Methods of Class");
+			System.out.println(tabOver+"======================================================");
 			Method[] declaredMethods = classObj.getDeclaredMethods();
 
 			for (Method m : declaredMethods) {
 				// Find each:
+				System.out.println();
+				System.out.println();
 				System.out.println(tabOver + "Method Name: \t" + m.getName());
 				// Exceptions thrown
 				Class[] exceptions = m.getExceptionTypes();
+				System.out.println(tabOver+"Method Exceptions Amount: "+exceptions.length );
 				for (Class e : exceptions) {
 					System.out.println(tabOver + "Exception Name: \t" + e.getName());
 				}
 				// Parameter types
 				Class[] parameters = m.getParameterTypes();
+				System.out.println();
+				System.out.println();
+				System.out.println(tabOver+"Method Parameters Amount: "+parameters.length );
 				for (Class param : parameters) {
 					System.out.println(tabOver + "Parameter Name: \t" + param.getName());
 				}
 				// return types
-				System.out.println(tabOver + "Return Type: \t" + m.getReturnType().getName());
+				System.out.println(tabOver + "Method Return Type: \t" + m.getReturnType().getName());
 				// modifiers
-				System.out.println(tabOver + "Modifier (int): \t" + m.getModifiers());
-				System.out.println(tabOver + "Modifier (string): \t" + Modifier.toString(m.getModifiers()));
+				System.out.println(tabOver + "Method Modifier (int): \t" + m.getModifiers());
+				System.out.println(tabOver + "MethodModifier (string): \t" + Modifier.toString(m.getModifiers()));
 			}
 
-			Constructor[] constructors = classObj.getConstructors();
+			Constructor[] constructors = classObj.getDeclaredConstructors();
+			System.out.println();
+			System.out.println();
+			System.out.println(tabOver + "Declared Constructor Amount: "+constructors.length);
 			// Get all Constructors
 			for (Constructor c : constructors) {
+				System.out.println("Constructor");
+				System.out.println("===============================================");
 				// Param types
 				for (Class param : c.getParameterTypes()) {
 					System.out.println(tabOver + "Parameter Types: " + param.getName());

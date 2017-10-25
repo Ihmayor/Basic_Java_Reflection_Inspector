@@ -1,11 +1,10 @@
-package ObjectInspector;
-
+package CodedInspector;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-public class myInspector 
+public class myInspector
 {
 	Object obj = null;
 	Class classObj =null;
