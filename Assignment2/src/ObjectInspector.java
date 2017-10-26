@@ -71,8 +71,10 @@ public class ObjectInspector {
 			}
 
 			// modifiers
-			System.out.println("Modifier (int): \t" + c.getModifiers());
-			System.out.println("Modifier (string): \t" + Modifier.toString(c.getModifiers()));
+			System.out.println("Constructor Modifier (int): \t" + c.getModifiers());
+			System.out.println("Constructor Modifier (string): \t" + Modifier.toString(c.getModifiers()));
+			System.out.println();
+			System.out.println();
 		}
 
 		InspectFields(toInspect, classObj, isRecursive, new int[] {});
@@ -118,8 +120,10 @@ public class ObjectInspector {
 						}
 
 						// modifiers
-						System.out.println("Modifier (int): \t" + c.getModifiers());
-						System.out.println("Modifier (string): \t" + Modifier.toString(c.getModifiers()));
+						System.out.println("Constructor Modifier (int): \t" + c.getModifiers());
+						System.out.println("Constructor Modifier (string): \t" + Modifier.toString(c.getModifiers()));
+						System.out.println();
+						System.out.println();
 					}
 					System.out.println();
 					System.out.println();
@@ -186,8 +190,10 @@ public class ObjectInspector {
 				}
 
 				// modifiers
-				System.out.println("Modifier (int): \t" + c.getModifiers());
-				System.out.println("Modifier (string): \t" + Modifier.toString(c.getModifiers()));
+				System.out.println("Constructor Modifier (int): \t" + c.getModifiers());
+				System.out.println("Constructor Modifier (string): \t" + Modifier.toString(c.getModifiers()));
+				System.out.println();
+				System.out.println();
 			}
 			System.out.println();
 			System.out.println();
@@ -340,18 +346,27 @@ System.out.println("Declared Fields of Class")	;
 							   
 							   for (int index = 0; index < Array.getLength(array); index++)
 							   {
+									
+								   System.out.println(tabOver+"\t===================================================");
 								   Object obj = Array.get(array, index);
 								   if (obj == null)
 								   {
-									   System.out.println("\t\tIndex: " +index + " Val: "+obj);
-								   }
+									   System.out.println(tabOver+"\tIndex: " +index + " Val: "+obj);
+					    		   }
 								   else if (isRecursive)
 								   {
-									   inspectRecursive(obj, isRecursive, appendInspected);
+									   System.out.println(tabOver+"\tIndex: " +index + " Value: ");
+						    		      int[] accountForArray = new int[appendInspected.length+1];
+									   for(int k = 0; k< appendInspected.length;k++)
+									   {
+										   accountForArray[k] = appendInspected[k];
+									   }
+									   accountForArray[appendInspected.length] = -1;
+									   inspectRecursive(obj, isRecursive, accountForArray);
 								   }
 								   else
 								   {
-									   System.out.println("\t\t Index:"+index+" "+obj.hashCode());
+									   System.out.println(tabOver+"\tIndex:"+index+" Value: "+obj.hashCode());
 								   }
 							   }
 						}
@@ -449,7 +464,7 @@ System.out.println("Declared Fields of Class")	;
 					Object obj = Array.get(arrayObj, index);
 					if (obj != null)
 						val = getNonRecursiveValue(obj);
-					System.out.println("Array Index: " + index + " Value: " + val);
+					System.out.println("\tArray Index: " + index + " Value: " + val);
 				}
 				val = "Array Inspected";
 			} catch (IllegalArgumentException e) {
@@ -508,7 +523,8 @@ System.out.println("Declared Fields of Class")	;
 				// Find each:
 				System.out.println();
 				System.out.println();
-				System.out.println(tabOver + "Method Name: \t" + m.getName());
+				System.out.println(tabOver+"======================================================");
+			    System.out.println(tabOver + "Method Name: \t" + m.getName());
 				// Exceptions thrown
 				Class[] exceptions = m.getExceptionTypes();
 				System.out.println(tabOver+"Method Exceptions Amount: "+exceptions.length );
@@ -517,8 +533,6 @@ System.out.println("Declared Fields of Class")	;
 				}
 				// Parameter types
 				Class[] parameters = m.getParameterTypes();
-				System.out.println();
-				System.out.println();
 				System.out.println(tabOver+"Method Parameters Amount: "+parameters.length );
 				for (Class param : parameters) {
 					System.out.println(tabOver + "Parameter Name: \t" + param.getName());
@@ -527,7 +541,7 @@ System.out.println("Declared Fields of Class")	;
 				System.out.println(tabOver + "Method Return Type: \t" + m.getReturnType().getName());
 				// modifiers
 				System.out.println(tabOver + "Method Modifier (int): \t" + m.getModifiers());
-				System.out.println(tabOver + "MethodModifier (string): \t" + Modifier.toString(m.getModifiers()));
+				System.out.println(tabOver + "Method Modifier (string): \t" + Modifier.toString(m.getModifiers()));
 			}
 
 			Constructor[] constructors = classObj.getDeclaredConstructors();
@@ -536,17 +550,18 @@ System.out.println("Declared Fields of Class")	;
 			System.out.println(tabOver + "Declared Constructor Amount: "+constructors.length);
 			// Get all Constructors
 			for (Constructor c : constructors) {
-				System.out.println("Constructor");
-				System.out.println("===============================================");
+				System.out.println(tabOver+"Constructor");
+				System.out.println(tabOver+"===============================================");
 				// Param types
 				for (Class param : c.getParameterTypes()) {
 					System.out.println(tabOver + "Parameter Types: " + param.getName());
 				}
 
 				// modifiers
-				System.out.println(tabOver + "Modifier (int): \t" + c.getModifiers());
-				System.out.println(tabOver + "Modifier (string): \t" + Modifier.toString(c.getModifiers()));
-
+				System.out.println(tabOver + "Constructor Modifier (int): \t" + c.getModifiers());
+				System.out.println(tabOver + "Constructor Modifier (string): \t" + Modifier.toString(c.getModifiers()));
+				System.out.println();
+				System.out.println();
 			}
 			InspectFields(toInspect, classObj, isRecursive, appendInspected);
 		}
