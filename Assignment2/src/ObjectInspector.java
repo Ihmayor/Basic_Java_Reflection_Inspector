@@ -84,7 +84,7 @@ public class ObjectInspector {
 	}
 	
 
-	private void inspectSuperInterface(Object childObj)
+	public void inspectSuperInterface(Object childObj)
 	{
 		
 		Class classObj = childObj.getClass();
@@ -111,7 +111,7 @@ public class ObjectInspector {
 						 */
 					}
 					
-					System.out.println("Declared Constructors Num: "+inter.getDeclaredConstructors().length);
+					System.out.println("Declared Constructors Amount: "+inter.getDeclaredConstructors().length);
 					System.out.println("=============================================================================");
 					for (Constructor c : inter.getDeclaredConstructors()) {
 						// Param types
@@ -127,7 +127,7 @@ public class ObjectInspector {
 					}
 					System.out.println();
 					System.out.println();
-					System.out.println("Declared Fields Num: "+inter.getDeclaredConstructors().length);
+					System.out.println("Declared Fields Amount: "+inter.getDeclaredFields().length);
 					System.out.println("=============================================================================");
 					for (Field f : inter.getDeclaredFields()) {
 						System.out.println("Field Name:\t" + f.getName());
@@ -155,7 +155,7 @@ public class ObjectInspector {
 
 	}
 	
-	private void inspectSuperClass(Object childObj)
+	public void inspectSuperClass(Object childObj)
 	{
 		
 		Class classObj = childObj.getClass();
@@ -182,7 +182,7 @@ public class ObjectInspector {
 				 * ));
 				 */
 			}
-			System.out.println("Declared Constructor Num: "+superClass.getDeclaredConstructors().length);;
+			System.out.println("Declared Constructor Amount: "+superClass.getDeclaredConstructors().length);;
 			for (Constructor c : superClass.getDeclaredConstructors()) {
 				// Param types
 				for (Class param : c.getParameterTypes()) {
@@ -199,7 +199,7 @@ public class ObjectInspector {
 			System.out.println();
 			System.out.println();
 			System.out.println();
-			System.out.println("Declared Constructor Num: "+superClass.getDeclaredFields().length);;
+			System.out.println("Declared Fields Amount: "+superClass.getDeclaredFields().length);;
 				for (Field f : superClass.getDeclaredFields()) {
 				System.out.println("Field Name:\t" + f.getName());
 				f.setAccessible(true);
@@ -227,7 +227,7 @@ public class ObjectInspector {
 		}
 	}
 
-	private void InspectFields(Object toInspect, Class classObj, boolean isRecursive, int[] alreadyInspected) {
+	public void InspectFields(Object toInspect, Class classObj, boolean isRecursive, int[] alreadyInspected) {
 			
 		if (isInspected(toInspect.hashCode(), alreadyInspected))
 			return;
@@ -412,7 +412,7 @@ System.out.println("Declared Fields of Class")	;
 
 	}
 
-	private Object getNonRecursiveValue(Object toGetVal) {
+	public Object getNonRecursiveValue(Object toGetVal) {
 		Object val = null;
 		Class classObj = toGetVal.getClass();
 		if (classObj.isPrimitive()) {
@@ -482,7 +482,7 @@ System.out.println("Declared Fields of Class")	;
 	}
 
 	// Method to inspected recursively w/o worry about stack overflow
-	private void inspectRecursive(Object toInspect, boolean isRecursive, int[] alreadyInspected) {
+	public void inspectRecursive(Object toInspect, boolean isRecursive, int[] alreadyInspected) {
 		if (isInspected(toInspect.hashCode(), alreadyInspected))
 			return;
 		else {
@@ -568,7 +568,7 @@ System.out.println("Declared Fields of Class")	;
 
 	}
 
-	private boolean isInspected(int hashCode, int[] alreadyInspected) {
+	public boolean isInspected(int hashCode, int[] alreadyInspected) {
 		for (int hash : alreadyInspected) {
 			if (hash == hashCode)
 				return true;
