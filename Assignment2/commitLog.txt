@@ -1,0 +1,113 @@
+commit ce8af5725159d8b01ded19c96d1e892407781a8e
+Author: Ihmayor <ihmayor@ucalgary.ca>
+Date:   Sun Oct 22 18:10:30 2017 -0600
+
+    Initial commit
+
+commit 481a27adf0fdf491c35d07ae6447dc2cc9e6a041
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Sun Oct 22 19:00:21 2017 -0600
+
+    Committing Assignment 2
+
+commit e433c0109c7629d84b3363e490be69df976cf6b2
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Mon Oct 23 17:37:41 2017 -0600
+
+    Assignment 2 w.i.p. Transferred additional work files from another computer
+
+commit e26dcc6422fc4d26d3b4d7bc0bcec77c724d121e
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Mon Oct 23 17:38:12 2017 -0600
+
+    Remove Redundant driver .zip file
+
+commit 5ab272d08ca18d24bc8541ab60210025dc04268d
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Mon Oct 23 19:21:40 2017 -0600
+
+    Massive Long Method. Will refactor
+
+commit 05695889d2c52038c641d2d5fbbfb275f21033fb
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Mon Oct 23 19:37:16 2017 -0600
+
+    Non Unit Test Test
+
+commit c6221362339b5d664ad8aa69fa95376fcc319f7e
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Mon Oct 23 19:44:09 2017 -0600
+
+    Added Interface INspection
+
+commit df816ce936f8c280e472e779bafa89071c140a48
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Mon Oct 23 20:24:04 2017 -0600
+
+    Fixed All basic Exception Errors. Refactoring to better organize + better handle hierarchy traversal
+
+commit 73edab410a6cc7d874708d275867493d40064c50
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Wed Oct 25 01:22:23 2017 -0600
+
+    Refactor Start + Bug Fixes
+
+commit 192d1d7984bd3b6bb142512874292a9800b299a7
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Wed Oct 25 13:34:34 2017 -0600
+
+    Refactored/Extracted more methods. Just cleaning up the format. Need to add a couple unit tests
+
+commit 7d933b3bbb14170a525042b354950693cfcd1e07
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Thu Oct 26 09:54:35 2017 -0600
+
+    Reformatted Output. Need to make unit tests
+
+commit 518c53c7e56f7c0d72796cc8da90f5880956d65f
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Thu Oct 26 17:38:07 2017 -0600
+
+    Unit Tests added. Fixing Formatting problems
+
+commit 3eb349b3261885a00982eb7fee551dfbf4029fa7
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Thu Oct 26 18:14:14 2017 -0600
+
+    Added testInsepctInterface()
+
+commit d507458043bd38f5ba35f626c6108eaed143863b
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Thu Oct 26 22:48:43 2017 -0600
+
+    Completed Unit tests so far. Fixed more bugs
+
+commit 4faa75eb50edd037af17d5560fd19d6702b7a8e7
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Thu Oct 26 23:13:27 2017 -0600
+
+    Extracted 'getPrimitiveValue' from duplicated code
+
+commit bfc4b94b6e17a62adb30ae9184c880833515effa
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Thu Oct 26 23:29:49 2017 -0600
+
+    Did some smaller extract methods for duplicated code. Unit tested them as well
+
+commit 2bd634e191a20905fe50614b699fe30ab95924ea
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Thu Oct 26 23:52:04 2017 -0600
+
+    More Minor Refactorings. Unit Tested It all
+
+commit 6fed34dcce415ad5709732d2614a2d5aebf07481
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Fri Oct 27 00:20:59 2017 -0600
+
+    Extracted Constructor code to one standard method. Fixed Unit Test accordingly
+
+commit e016ac0495812d6c61bc033c477bd40df143355f
+Author: Irene Mayor <ihmayor@ucalgary.ca>
+Date:   Fri Oct 27 00:27:00 2017 -0600
+
+    Minor Clean up in the repository

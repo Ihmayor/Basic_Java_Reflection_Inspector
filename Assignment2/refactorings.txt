@@ -1,0 +1,18 @@
+Refactoring:
+
+Bad Smell: Duplicated Code 
+
+Fix: Used Extracted Method on inspect() and inspectRecursive() which resulted in the following methods: 
+
+- inspectConstructors
+- inspectMethods 
+- inspectSuperInterface
+- inspectSuperClass
+- inspectFields
+- getNonRecursiveValue
+- getPrimitiveValue
+- addHashCode
+- calculateTabOver
+- isInspected
+
+Steps of Identify, Extract, Replace and Unit Test were repeated for every method above.

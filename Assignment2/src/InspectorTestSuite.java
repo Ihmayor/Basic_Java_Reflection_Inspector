@@ -1,5 +1,3 @@
-package testPackage;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.io.ByteArrayOutputStream;
@@ -15,7 +13,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
-class TestObjectInspector {
+class InspectorTestSuite {
 	
 	@Test
 	public void testInspectSuperClass() throws Exception {
@@ -32,7 +30,7 @@ class TestObjectInspector {
 		test.field5 = "test";
 
 		//Recreate Expected Console Print out
-		String expected = "Immediate Superclass:\tCodedInspector.TestObjectInspector$TestObject"+System.getProperty("line.separator")
+		String expected = "Immediate Superclass:\tInspectorTestSuite$TestObject"+System.getProperty("line.separator")
 		+ "Inspecting Superclass"+System.getProperty("line.separator")
 		+ "==================================================="+System.getProperty("line.separator")
 		+System.getProperty("line.separator")
@@ -40,7 +38,7 @@ class TestObjectInspector {
 		+"Declared Constructor Amount: 1"+System.getProperty("line.separator")
 		+"Constructor"+System.getProperty("line.separator")
 		+"==============================================="+System.getProperty("line.separator")
-		+ "Parameter Types: CodedInspector.TestObjectInspector"+System.getProperty("line.separator")
+		+ "Parameter Types: InspectorTestSuite"+System.getProperty("line.separator")
 		+ "Constructor Modifier (int): 	1"+System.getProperty("line.separator")
 		+ "Constructor Modifier (string): 	public"
 		+System.getProperty("line.separator")
@@ -58,7 +56,7 @@ class TestObjectInspector {
 		+ "Field Name:	this$0"+System.getProperty("line.separator")
 		+ "Field Value:\t"+this.hashCode()+System.getProperty("line.separator")
 		+ "====================================================="+System.getProperty("line.separator")
-		+"Exploring SuperClass of Super Class CodedInspector.TestObjectInspector$TestObject"+System.getProperty("line.separator")
+		+"Exploring SuperClass of Super Class InspectorTestSuite$TestObject"+System.getProperty("line.separator")
 		+"Immediate Superclass:	java.lang.Object"+System.getProperty("line.separator")
 		+"Inspecting Superclass"+System.getProperty("line.separator")
 		+"==================================================="+System.getProperty("line.separator")
@@ -91,7 +89,7 @@ class TestObjectInspector {
 		+"This superclass extends no superclass"+System.getProperty("line.separator")
 		+"======================================================"+System.getProperty("line.separator")
 		+"Finished Inspecting SuperClass"+System.getProperty("line.separator")
-		+"End Exploring Super Class of Super Class CodedInspector.TestObjectInspector$TestObject"+System.getProperty("line.separator")
+		+"End Exploring Super Class of Super Class InspectorTestSuite$TestObject"+System.getProperty("line.separator")
 		+"====================================================="+System.getProperty("line.separator")
 		+"======================================================"+System.getProperty("line.separator")
 		+"Finished Inspecting SuperClass"+System.getProperty("line.separator");
@@ -116,7 +114,7 @@ class TestObjectInspector {
 		assertEquals("java.lang.Class", inter.getClass().getName());
 		
 		//Recreate Expected Console Print out
-		String expected = "Implemented Interface: CodedInspector.TestObjectInspector$TestInterface"+System.getProperty("line.separator")
+		String expected = "Implemented Interface: InspectorTestSuite$TestInterface"+System.getProperty("line.separator")
 				+"Inspecting Interface"+System.getProperty("line.separator")
 				+"==================================================="+System.getProperty("line.separator")
 				+"Method Name: 	blah"+System.getProperty("line.separator")
@@ -158,7 +156,7 @@ class TestObjectInspector {
 				+"Field Value: "+test.field2.hashCode()+System.getProperty("line.separator")
 				+"============================================="+System.getProperty("line.separator")
 				+"Field Name: 	this$0"+System.getProperty("line.separator")
-				+"Field Type: 	CodedInspector.TestObjectInspector"+System.getProperty("line.separator")
+				+"Field Type: 	InspectorTestSuite"+System.getProperty("line.separator")
 				+"Field Value: "+this.hashCode()+System.getProperty("line.separator");
 				
 				assertEquals(expected, outContent.toString());
@@ -187,7 +185,7 @@ class TestObjectInspector {
 			+"Field Value is null."+System.getProperty("line.separator")
 			+"============================================="+System.getProperty("line.separator")
 			+"Field Name: 	this$0"+System.getProperty("line.separator")
-			+"Field Type: 	CodedInspector.TestObjectInspector"+System.getProperty("line.separator")
+			+"Field Type: 	InspectorTestSuite"+System.getProperty("line.separator")
 			+"Field Value: "+this.hashCode()+System.getProperty("line.separator");
 			
 			assertEquals(expected, outContent.toString());
@@ -224,7 +222,7 @@ class TestObjectInspector {
 		+"Field Value is null."+System.getProperty("line.separator")
 		+"============================================="+System.getProperty("line.separator")
 		+"Field Name: 	this$0"+System.getProperty("line.separator")
-		+"Field Type: 	CodedInspector.TestObjectInspector"+System.getProperty("line.separator")
+		+"Field Type: 	InspectorTestSuite"+System.getProperty("line.separator")
 		+"Field Value: "+this.hashCode()+System.getProperty("line.separator");
 		assertEquals(expected, outContent.toString());
 	}
