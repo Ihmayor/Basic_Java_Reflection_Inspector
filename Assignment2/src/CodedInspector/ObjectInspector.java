@@ -36,31 +36,44 @@ public class ObjectInspector {
 		inspectMethods(toInspect,"");
 		
 		//Inspect Constructors
-		Constructor[] constructors = classObj.getDeclaredConstructors();
+	    inspectConstructors(toInspect,"");
+		
+		//Inspect Fields
+		inspectFields(toInspect, classObj, isRecursive, new int[] {});
+	}
+	
+	//inspect constructors of given object. Tab accordingly (if recursive)
+	private void inspectConstructors(Object toInspect, String tabOver)
+	{
+		Class classObj;
+		if (toInspect.getClass().getName() == "java.lang.Class")
+			classObj = (Class)toInspect;
+		else
+			classObj = toInspect.getClass();
 		// Get all Constructors
+		Constructor[] constructors = classObj.getDeclaredConstructors();
 		System.out.println();
 		System.out.println();
-		System.out.println("Declared Constructors Amount: "+constructors.length);
+		System.out.println(tabOver + "Declared Constructor Amount: "+constructors.length);
+		// Get all Constructors
 		for (Constructor c : constructors) {
-			System.out.println("Constructor");
-			System.out.println("==============================================================================");
+			System.out.println(tabOver+"Constructor");
+			System.out.println(tabOver+"===============================================");
 			// Param types
 			for (Class param : c.getParameterTypes()) {
-				System.out.println("Parameter Types: " + param.getName());
+				System.out.println(tabOver + "Parameter Types: " + param.getName());
 			}
 
 			// modifiers
-			System.out.println("Constructor Modifier (int): \t" + c.getModifiers());
-			System.out.println("Constructor Modifier (string): \t" + Modifier.toString(c.getModifiers()));
+			System.out.println(tabOver + "Constructor Modifier (int): \t" + c.getModifiers());
+			System.out.println(tabOver + "Constructor Modifier (string): \t" + Modifier.toString(c.getModifiers()));
 			System.out.println();
 			System.out.println();
 		}
-		
-		//Inspect Fields
-		InspectFields(toInspect, classObj, isRecursive, new int[] {});
 	}
 	
-	public void inspectMethods(Object toInspect, String tabOver)
+	//inspect methods of given object. Tab accordingly (if recursive)
+	private void inspectMethods(Object toInspect, String tabOver)
 	{
 		Class classObj = toInspect.getClass();
 		// The method of the class declared
@@ -108,21 +121,8 @@ public class ObjectInspector {
 						// Find each:
 						System.out.println("Method Name: \t" + m.getName());
 					}
+					inspectConstructors(inter, "");
 					
-					System.out.println("Declared Constructors Amount: "+inter.getDeclaredConstructors().length);
-					System.out.println("=============================================================================");
-					for (Constructor c : inter.getDeclaredConstructors()) {
-						// Param types
-						for (Class param : c.getParameterTypes()) {
-							System.out.println("Parameter Types: " + param.getName());
-						}
-
-						// modifiers
-						System.out.println("Constructor Modifier (int): \t" + c.getModifiers());
-						System.out.println("Constructor Modifier (string): \t" + Modifier.toString(c.getModifiers()));
-						System.out.println();
-						System.out.println();
-					}
 					System.out.println();
 					System.out.println();
 					System.out.println("Declared Fields Amount: "+inter.getDeclaredFields().length);
@@ -168,20 +168,8 @@ public class ObjectInspector {
 				// Find each Method:
 				System.out.println("Method Name: \t" + m.getName());
 			}
+			inspectConstructors(superClass,"");
 			
-			System.out.println("Declared Constructor Amount: "+superClass.getDeclaredConstructors().length);;
-			for (Constructor c : superClass.getDeclaredConstructors()) {
-				// Param types
-				for (Class param : c.getParameterTypes()) {
-					System.out.println("Parameter Types: " + param.getName());
-				}
-
-				// modifiers
-				System.out.println("Constructor Modifier (int): \t" + c.getModifiers());
-				System.out.println("Constructor Modifier (string): \t" + Modifier.toString(c.getModifiers()));
-				System.out.println();
-				System.out.println();
-			}
 			System.out.println();
 			System.out.println();
 			System.out.println();
@@ -245,32 +233,14 @@ public class ObjectInspector {
 
 			// The method of the class declared
 			inspectMethods(toInspect,tabOver);
-			Constructor[] constructors = classObj.getDeclaredConstructors();
-			System.out.println();
-			System.out.println();
-			System.out.println(tabOver + "Declared Constructor Amount: "+constructors.length);
-			// Get all Constructors
-			for (Constructor c : constructors) {
-				System.out.println(tabOver+"Constructor");
-				System.out.println(tabOver+"===============================================");
-				// Param types
-				for (Class param : c.getParameterTypes()) {
-					System.out.println(tabOver + "Parameter Types: " + param.getName());
-				}
-
-				// modifiers
-				System.out.println(tabOver + "Constructor Modifier (int): \t" + c.getModifiers());
-				System.out.println(tabOver + "Constructor Modifier (string): \t" + Modifier.toString(c.getModifiers()));
-				System.out.println();
-				System.out.println();
-			}
-			InspectFields(toInspect, classObj, isRecursive, appendInspected);
+			inspectConstructors(toInspect,tabOver);
+			inspectFields(toInspect, classObj, isRecursive, appendInspected);
 		}
 
 	}
 
 	//Method to specifically inspect fields and print results to console
-	public void InspectFields(Object toInspect, Class classObj, boolean isRecursive, int[] alreadyInspected) {
+	public void inspectFields(Object toInspect, Class classObj, boolean isRecursive, int[] alreadyInspected) {
 			
 		if (isInspected(toInspect.hashCode(), alreadyInspected))
 			return;

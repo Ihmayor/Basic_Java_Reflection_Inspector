@@ -35,7 +35,11 @@ class TestObjectInspector {
 		String expected = "Immediate Superclass:\tCodedInspector.TestObjectInspector$TestObject"+System.getProperty("line.separator")
 		+ "Inspecting Superclass"+System.getProperty("line.separator")
 		+ "==================================================="+System.getProperty("line.separator")
+		+System.getProperty("line.separator")
+		+System.getProperty("line.separator")
 		+"Declared Constructor Amount: 1"+System.getProperty("line.separator")
+		+"Constructor"+System.getProperty("line.separator")
+		+"==============================================="+System.getProperty("line.separator")
 		+ "Parameter Types: CodedInspector.TestObjectInspector"+System.getProperty("line.separator")
 		+ "Constructor Modifier (int): 	1"+System.getProperty("line.separator")
 		+ "Constructor Modifier (string): 	public"
@@ -70,7 +74,11 @@ class TestObjectInspector {
 		+"Method Name: 	notify"+System.getProperty("line.separator")
 		+"Method Name: 	notifyAll"+System.getProperty("line.separator")
 		+"Method Name: 	registerNatives"+System.getProperty("line.separator")
+		+System.getProperty("line.separator")
+		+System.getProperty("line.separator")
 		+"Declared Constructor Amount: 1"+System.getProperty("line.separator")
+		+"Constructor"+System.getProperty("line.separator")
+		+"==============================================="+System.getProperty("line.separator")
 		+"Constructor Modifier (int): 	1"+System.getProperty("line.separator")
 		+"Constructor Modifier (string): 	public"+System.getProperty("line.separator")
 		+System.getProperty("line.separator")
@@ -104,14 +112,17 @@ class TestObjectInspector {
 
 		TestObject1 test =  new TestObject1();
 		inspector.inspectSuperInterface(test);
-	
+		Class inter = test.getClass().getInterfaces()[0];
+		assertEquals("java.lang.Class", inter.getClass().getName());
+		
 		//Recreate Expected Console Print out
 		String expected = "Implemented Interface: CodedInspector.TestObjectInspector$TestInterface"+System.getProperty("line.separator")
 				+"Inspecting Interface"+System.getProperty("line.separator")
 				+"==================================================="+System.getProperty("line.separator")
 				+"Method Name: 	blah"+System.getProperty("line.separator")
-				+"Declared Constructors Amount: 0"+System.getProperty("line.separator")
-				+"============================================================================="+System.getProperty("line.separator")
+				+System.getProperty("line.separator")
+				+System.getProperty("line.separator")
+				+"Declared Constructor Amount: 0"+System.getProperty("line.separator")
 				+System.getProperty("line.separator")
 				+System.getProperty("line.separator")
 				+"Declared Fields Amount: 0"+System.getProperty("line.separator")
@@ -133,7 +144,7 @@ class TestObjectInspector {
 				TestObject test =  new TestObject();
 				test.field1 = 0;
 				test.field2 = "test";
-				inspector.InspectFields(test, test.getClass(), false, new int [] {});
+				inspector.inspectFields(test, test.getClass(), false, new int [] {});
 
 				//Recreate Expected Console Print out
 				String expected = System.getProperty("line.separator")+System.getProperty("line.separator")+"Declared Fields of Class"+System.getProperty("line.separator")
@@ -162,7 +173,7 @@ class TestObjectInspector {
 			ObjectInspector inspector = new ObjectInspector();
 
 			TestObject test =  new TestObject();
-			inspector.InspectFields(test, test.getClass(), false, new int [] {});
+			inspector.inspectFields(test, test.getClass(), false, new int [] {});
 
 			//Recreate Expected Console Print out
 			String expected = System.getProperty("line.separator")+System.getProperty("line.separator")+"Declared Fields of Class"+System.getProperty("line.separator")
@@ -192,7 +203,7 @@ class TestObjectInspector {
 
 		TestObject3 test =  new TestObject3();
 		test.field9 = new int[] {1,2,3};
-		inspector.InspectFields(test, test.getClass(), false, new int [] {});
+		inspector.inspectFields(test, test.getClass(), false, new int [] {});
 
 		//Recreate Expected Console Print out
 		String expected = System.getProperty("line.separator")+System.getProperty("line.separator")
