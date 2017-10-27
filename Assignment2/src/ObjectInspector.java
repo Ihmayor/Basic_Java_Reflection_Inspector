@@ -250,7 +250,7 @@ public class ObjectInspector {
 
 			System.out.println();
 			System.out.println();
-System.out.println("Declared Fields of Class")	;
+			System.out.println(tabOver+"Declared Fields of Class")	;
 				Field[] f = classObj.getDeclaredFields();		
 
 				for (int i = 0; i<f.length; i++)
@@ -259,9 +259,9 @@ System.out.println("Declared Fields of Class")	;
 					//Modifiers
 					f[i].setAccessible(true);
 					Object val = null;
-					System.out.println("=============================================");
-					System.out.println("Field Name: \t"+f[i].getName());
-					System.out.println("Field Type: \t"+f[i].getType().getName());
+					System.out.println(tabOver+"=============================================");
+					System.out.println(tabOver+"Field Name: \t"+f[i].getName());
+					System.out.println(tabOver+"Field Type: \t"+f[i].getType().getName());
 					if (f[i].getType().isPrimitive())
 					{	
 						try 
@@ -340,9 +340,9 @@ System.out.println("Declared Fields of Class")	;
 							   Class cType = f[i].getType().getComponentType();
 							   Object array = f[i].get(toInspect);
 							   System.out.println(f[i].getName());
-							   System.out.println("\tArray Length: "+Array.getLength(array));
-							   System.out.println("\tArray Component Type: "+ cType.getName());
-							   System.out.println("\tArray Contents:");
+							   System.out.println(tabOver+"\tArray Length: "+Array.getLength(array));
+							   System.out.println(tabOver+"\tArray Component Type: "+ cType.getName());
+							   System.out.println(tabOver+"\tArray Contents:");
 							   
 							   for (int index = 0; index < Array.getLength(array); index++)
 							   {
@@ -372,7 +372,7 @@ System.out.println("Declared Fields of Class")	;
 						}
 						 catch (IllegalArgumentException | IllegalAccessException e) {
 								{
-							System.out.println("Illegal Access Exception for Field: "+f[i].getName());
+							System.out.println(tabOver+"Illegal Access Exception for Field: "+f[i].getName());
 							val = "Unattained";
 						}
 						 }}
@@ -397,7 +397,8 @@ System.out.println("Declared Fields of Class")	;
 						{
 							//If not => print hash code.
 							try {
-								val = f[i].get(toInspect).getClass().hashCode();
+								if (f[i].get(toInspect) != null)
+									val = f[i].get(toInspect).hashCode();
 							} catch (IllegalArgumentException | IllegalAccessException e) {
 								e.printStackTrace();
 							}
@@ -406,7 +407,9 @@ System.out.println("Declared Fields of Class")	;
 						
 					}
 					if (val != null)
-						System.out.println("Field Value: "+val.toString());
+						System.out.println(tabOver+"Field Value: "+val.toString());
+					else 
+						System.out.println(tabOver+"Field Value is null.");
 				}
 			}
 

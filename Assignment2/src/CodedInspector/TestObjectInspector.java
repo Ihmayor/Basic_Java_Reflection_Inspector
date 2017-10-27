@@ -17,9 +17,9 @@ import org.junit.jupiter.api.Test;
 
 class TestObjectInspector {
 	
-	
 	@Test
 	public void testInspectSuperClass() throws Exception {
+		
 		//Arrange
 		//Byte Array output MUST BE started out here to work. Has been tested when placed in @Before and @After
 		ByteArrayOutputStream outContent = new ByteArrayOutputStream();
@@ -31,6 +31,7 @@ class TestObjectInspector {
 		test.field4 = 2;
 		test.field5 = "test";
 
+		//Recreate Expected Console Print out
 		String expected = "Immediate Superclass:\tCodedInspector.TestObjectInspector$TestObject"+System.getProperty("line.separator")
 		+ "Inspecting Superclass"+System.getProperty("line.separator")
 		+ "==================================================="+System.getProperty("line.separator")
@@ -104,6 +105,7 @@ class TestObjectInspector {
 		TestObject1 test =  new TestObject1();
 		inspector.inspectSuperInterface(test);
 	
+		//Recreate Expected Console Print out
 		String expected = "Implemented Interface: CodedInspector.TestObjectInspector$TestInterface"+System.getProperty("line.separator")
 				+"Inspecting Interface"+System.getProperty("line.separator")
 				+"==================================================="+System.getProperty("line.separator")
@@ -120,6 +122,102 @@ class TestObjectInspector {
 		
 		assertEquals(expected, outContent.toString());
 	}
+	
+	@Test
+	public void testInspectFields()
+	{
+		//Arrange
+				ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+			    System.setOut(new PrintStream(outContent));
+				ObjectInspector inspector = new ObjectInspector();
+				TestObject test =  new TestObject();
+				test.field1 = 0;
+				test.field2 = "test";
+				inspector.InspectFields(test, test.getClass(), false, new int [] {});
+
+				//Recreate Expected Console Print out
+				String expected = System.getProperty("line.separator")+System.getProperty("line.separator")+"Declared Fields of Class"+System.getProperty("line.separator")
+				+"============================================="+System.getProperty("line.separator")
+				+"Field Name: 	field1"+System.getProperty("line.separator")
+				+"Field Type: 	int"+System.getProperty("line.separator")
+				+"Field Value: "+test.field1+System.getProperty("line.separator")
+				+"============================================="+System.getProperty("line.separator")
+				+"Field Name: 	field2"+System.getProperty("line.separator")
+				+"Field Type: 	java.lang.String"+System.getProperty("line.separator")
+				+"Field Value: "+test.field2.hashCode()+System.getProperty("line.separator")
+				+"============================================="+System.getProperty("line.separator")
+				+"Field Name: 	this$0"+System.getProperty("line.separator")
+				+"Field Type: 	CodedInspector.TestObjectInspector"+System.getProperty("line.separator")
+				+"Field Value: "+this.hashCode()+System.getProperty("line.separator");
+				
+				assertEquals(expected, outContent.toString());
+	}
+
+	@Test
+	public void testInspectFieldsNull() 
+	{
+			//Arrange
+			ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+		    System.setOut(new PrintStream(outContent));
+			ObjectInspector inspector = new ObjectInspector();
+
+			TestObject test =  new TestObject();
+			inspector.InspectFields(test, test.getClass(), false, new int [] {});
+
+			//Recreate Expected Console Print out
+			String expected = System.getProperty("line.separator")+System.getProperty("line.separator")+"Declared Fields of Class"+System.getProperty("line.separator")
+			+"============================================="+System.getProperty("line.separator")
+			+"Field Name: 	field1"+System.getProperty("line.separator")
+			+"Field Type: 	int"+System.getProperty("line.separator")
+			+"Field Value: "+test.field1+System.getProperty("line.separator")
+			+"============================================="+System.getProperty("line.separator")
+			+"Field Name: 	field2"+System.getProperty("line.separator")
+			+"Field Type: 	java.lang.String"+System.getProperty("line.separator")
+			+"Field Value is null."+System.getProperty("line.separator")
+			+"============================================="+System.getProperty("line.separator")
+			+"Field Name: 	this$0"+System.getProperty("line.separator")
+			+"Field Type: 	CodedInspector.TestObjectInspector"+System.getProperty("line.separator")
+			+"Field Value: "+this.hashCode()+System.getProperty("line.separator");
+			
+			assertEquals(expected, outContent.toString());
+	}
+	
+	@Test
+	public void testInspectFieldsArray()
+	{
+		//Arrange
+		ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+	    System.setOut(new PrintStream(outContent));
+		ObjectInspector inspector = new ObjectInspector();
+
+		TestObject3 test =  new TestObject3();
+		test.field9 = new int[] {1,2,3};
+		inspector.InspectFields(test, test.getClass(), false, new int [] {});
+
+		//Recreate Expected Console Print out
+		String expected = System.getProperty("line.separator")+System.getProperty("line.separator")
+		+"Declared Fields of Class"+System.getProperty("line.separator")
+		+"============================================="+System.getProperty("line.separator")
+		+"Field Name: 	field9"+System.getProperty("line.separator")
+		+"Field Type: 	[I"+System.getProperty("line.separator")
+		+"field9"+System.getProperty("line.separator")
+		+"\tArray Length: 3"+System.getProperty("line.separator")
+		+"\tArray Component Type: int"+System.getProperty("line.separator")
+		+"\tArray Contents:"+System.getProperty("line.separator")
+		+"\t==================================================="+System.getProperty("line.separator")
+		+"\tIndex:0 Value: 1"+System.getProperty("line.separator")
+		+"\t==================================================="+System.getProperty("line.separator")
+		+"\tIndex:1 Value: 2"+System.getProperty("line.separator")
+		+"\t==================================================="+System.getProperty("line.separator")
+		+"\tIndex:2 Value: 3"+System.getProperty("line.separator")
+		+"Field Value is null."+System.getProperty("line.separator")
+		+"============================================="+System.getProperty("line.separator")
+		+"Field Name: 	this$0"+System.getProperty("line.separator")
+		+"Field Type: 	CodedInspector.TestObjectInspector"+System.getProperty("line.separator")
+		+"Field Value: "+this.hashCode()+System.getProperty("line.separator");
+		assertEquals(expected, outContent.toString());
+	}
+
 	
 	////////////////////Test Objects/////////////////////////////
 	
@@ -161,11 +259,12 @@ class TestObjectInspector {
 			return super.hashCode();
 		}
 	}
-	
-	public class TestObject3 extends TestObject2{
-		public int field6;
-		public String field7;
+	public class TestObject3{
+		public int[] field9;
+		public TestObject3() {
+		}
 	}
+	
 	
 	public interface TestInterface{
 		public abstract void blah();
