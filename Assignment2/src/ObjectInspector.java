@@ -31,35 +31,8 @@ public class ObjectInspector {
 		System.out.println();
 		
 		//Inspect Methods
-		// The method of the class declared
-		Method[] declaredMethods = classObj.getDeclaredMethods();
-		System.out.println("Declared Methods of Class");
-		System.out.println("======================================================");
-		for (Method m : declaredMethods) {
-			System.out.println();
-			System.out.println();
-			System.out.println("======================================================");
-			// Find each:
-			System.out.println("Method Name: \t" + m.getName());
-			// Exceptions thrown
-			System.out.println("Method Exceptions");
-			Class[] exceptions = m.getExceptionTypes();
-			for (Class e : exceptions) {
-				System.out.println("Exception Name: \t" + e.getName());
-			}
-			// Parameter types
-			System.out.println("Method Parameters");
-			Class[] parameters = m.getParameterTypes();
-			for (Class param : parameters) {
-				System.out.println("Parameter Name: \t" + param.getName());
-			}
-			// return types
-			System.out.println("Method Return Type: \t" + m.getReturnType().getName());
-			// modifiers
-			System.out.println("Method Modifier (int): \t" + m.getModifiers());
-			System.out.println("Method Modifier (string): \t" + Modifier.toString(m.getModifiers()));
-		}
-
+		inspectMethods(toInspect,"");
+		
 		//Inspect Constructors
 		Constructor[] constructors = classObj.getDeclaredConstructors();
 		// Get all Constructors
@@ -85,6 +58,39 @@ public class ObjectInspector {
 		InspectFields(toInspect, classObj, isRecursive, new int[] {});
 	}
 	
+	public void inspectMethods(Object toInspect, String tabOver)
+	{
+		Class classObj = toInspect.getClass();
+		// The method of the class declared
+		System.out.println(tabOver+"Declared Methods of Class");
+		System.out.println(tabOver+"======================================================");
+		Method[] declaredMethods = classObj.getDeclaredMethods();
+		for (Method m : declaredMethods) {
+			// Find each:
+			System.out.println();
+			System.out.println();
+			System.out.println(tabOver+"======================================================");
+		    System.out.println(tabOver + "Method Name: \t" + m.getName());
+			// Exceptions thrown
+			Class[] exceptions = m.getExceptionTypes();
+			System.out.println(tabOver+"Method Exceptions Amount: "+exceptions.length );
+			for (Class e : exceptions) {
+				System.out.println(tabOver + "Exception Name: \t" + e.getName());
+			}
+			// Parameter types
+			Class[] parameters = m.getParameterTypes();
+			System.out.println(tabOver+"Method Parameters Amount: "+parameters.length );
+			for (Class param : parameters) {
+				System.out.println(tabOver + "Parameter Name: \t" + param.getName());
+			}
+			// return types
+			System.out.println(tabOver + "Method Return Type: \t" + m.getReturnType().getName());
+			// modifiers
+			System.out.println(tabOver + "Method Modifier (int): \t" + m.getModifiers());
+			System.out.println(tabOver + "Method Modifier (string): \t" + Modifier.toString(m.getModifiers()));
+		}
+	}
+	
 	//Inspect Super Interfaces
 	public void inspectSuperInterface(Object childObj)
 	{
@@ -99,18 +105,6 @@ public class ObjectInspector {
 					for (Method m : inter.getDeclaredMethods()) {
 						// Find each:
 						System.out.println("Method Name: \t" + m.getName());
-
-						/*
-						 * //Exceptions thrown Class[] exceptions = m.getExceptionTypes(); for(Class
-						 * e:exceptions) { System.out.println("Exception Name: \t"+e.getName()); }
-						 * //Parameter types Class[] parameters = m.getParameterTypes(); for(Class
-						 * param:parameters) { System.out.println("Parameter Name: \t"+param.getName());
-						 * } //return types
-						 * System.out.println("Return Type: \t"+m.getReturnType().getName());
-						 * //modifiers System.out.println("Modifier (int): \t"+m.getModifiers());
-						 * System.out.println("Modifier (string): \t"+Modifier.toString(m.getModifiers()
-						 * ));
-						 */
 					}
 					
 					System.out.println("Declared Constructors Amount: "+inter.getDeclaredConstructors().length);
@@ -171,8 +165,8 @@ public class ObjectInspector {
 			for (Method m : superClass.getDeclaredMethods()) {
 				// Find each Method:
 				System.out.println("Method Name: \t" + m.getName());
-
 			}
+			
 			System.out.println("Declared Constructor Amount: "+superClass.getDeclaredConstructors().length);;
 			for (Constructor c : superClass.getDeclaredConstructors()) {
 				// Param types
@@ -248,34 +242,7 @@ public class ObjectInspector {
 			}
 
 			// The method of the class declared
-			System.out.println(tabOver+"Declared Methods of Class");
-			System.out.println(tabOver+"======================================================");
-			Method[] declaredMethods = classObj.getDeclaredMethods();
-			for (Method m : declaredMethods) {
-				// Find each:
-				System.out.println();
-				System.out.println();
-				System.out.println(tabOver+"======================================================");
-			    System.out.println(tabOver + "Method Name: \t" + m.getName());
-				// Exceptions thrown
-				Class[] exceptions = m.getExceptionTypes();
-				System.out.println(tabOver+"Method Exceptions Amount: "+exceptions.length );
-				for (Class e : exceptions) {
-					System.out.println(tabOver + "Exception Name: \t" + e.getName());
-				}
-				// Parameter types
-				Class[] parameters = m.getParameterTypes();
-				System.out.println(tabOver+"Method Parameters Amount: "+parameters.length );
-				for (Class param : parameters) {
-					System.out.println(tabOver + "Parameter Name: \t" + param.getName());
-				}
-				// return types
-				System.out.println(tabOver + "Method Return Type: \t" + m.getReturnType().getName());
-				// modifiers
-				System.out.println(tabOver + "Method Modifier (int): \t" + m.getModifiers());
-				System.out.println(tabOver + "Method Modifier (string): \t" + Modifier.toString(m.getModifiers()));
-			}
-
+			inspectMethods(toInspect,tabOver);
 			Constructor[] constructors = classObj.getDeclaredConstructors();
 			System.out.println();
 			System.out.println();
@@ -315,8 +282,9 @@ public class ObjectInspector {
 			System.out.println();
 			System.out.println();
 			System.out.println(tabOver+"Declared Fields of Class")	;
-				Field[] f = classObj.getDeclaredFields();		
-
+			Field[] f = classObj.getDeclaredFields();		
+			try 
+			{
 				for (int i = 0; i<f.length; i++)
 				{
 					//Type
@@ -328,91 +296,74 @@ public class ObjectInspector {
 					System.out.println(tabOver+"Field Type: \t"+f[i].getType().getName());
 					if (f[i].getType().isPrimitive())
 					{	
-						try 
-						{
 							val = getPrimitiveValue(f[i].getType().getName(),f[i].get(toInspect));
-						}
-						 catch (IllegalArgumentException | IllegalAccessException e) {
-								e.printStackTrace();
-						}
+						
 					}
 					else if (f[i].getType().isArray())
 					{	
 						//Must be able to handle arrays (names, component Type, length, all contents)
-						try {
-							   f[i].setAccessible(true);
-							   Class cType = f[i].getType().getComponentType();
-							   Object array = f[i].get(toInspect);
-							   System.out.println(f[i].getName());
-							   System.out.println(tabOver+"\tArray Length: "+Array.getLength(array));
-							   System.out.println(tabOver+"\tArray Component Type: "+ cType.getName());
-							   System.out.println(tabOver+"\tArray Contents:");
-							   
-							   for (int index = 0; index < Array.getLength(array); index++)
-							   {
-									
-								   System.out.println(tabOver+"\t===================================================");
-								   Object obj = Array.get(array, index);
-								   if (obj == null)
-								   {
-									   System.out.println(tabOver+"\tIndex: " +index + " Val: "+obj);
-					    		   }
-								   else if (isRecursive)
-								   {
-									   System.out.println(tabOver+"\tIndex: " +index + " Value: ");
-						    		   //Add Inspected Hashcode for Tabbing purposes
-									   int[] accountForArray = addHashCode(-1, appendInspected);
-									   inspectRecursive(obj, isRecursive, accountForArray);
-								   }
-								   else
-								   {
-									   System.out.println(tabOver+"\tIndex:"+index+" Value: "+obj.hashCode());
-								   }
-							   }
-						}
-						 catch (IllegalArgumentException | IllegalAccessException e) {
-								{
-							System.out.println(tabOver+"Illegal Access Exception for Field: "+f[i].getName());
-							val = "Unattained";
-						}
-						 }}
+					   f[i].setAccessible(true);
+					   Class cType = f[i].getType().getComponentType();
+					   Object array = f[i].get(toInspect);
+					   System.out.println(tabOver+f[i].getName());
+					   System.out.println(tabOver+"\tArray Length: "+Array.getLength(array));
+					   System.out.println(tabOver+"\tArray Component Type: "+ cType.getName());
+					   System.out.println(tabOver+"\tArray Contents:");
+					   
+					   for (int index = 0; index < Array.getLength(array); index++)
+					   {
+							
+						   System.out.println(tabOver+"\t===================================================");
+						   Object obj = Array.get(array, index);
+						   if (obj == null)
+						   {
+							   System.out.println(tabOver+"\tIndex: " +index + " Val: "+obj);
+			    		   }
+						   else if (isRecursive)
+						   {
+							   System.out.println(tabOver+"\tIndex: " +index + " Value: ");
+				    		   //Add Inspected Hashcode for Tabbing purposes
+							   int[] accountForArray = addHashCode(-1, appendInspected);
+							   inspectRecursive(obj, isRecursive, accountForArray);
+						   }
+						   else
+						   {
+							   System.out.println(tabOver+"\tIndex:"+index+" Value: "+obj.hashCode());
+						   }
+					   }
+					}
+					//If field contains object:
 					else
 					{
-						//If field contains object:
+						
+						//if recursive => Inspect nested object
 						if (isRecursive)
-							//if recursive => Inspect nested object
 						{	
-							try {
-								if (f[i].get(toInspect) != null)
-									inspectRecursive(f[i].get(toInspect), isRecursive, appendInspected);
-								else 
-									val = null;
-							} catch (IllegalArgumentException | IllegalAccessException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
+							if (f[i].get(toInspect) != null)
+								inspectRecursive(f[i].get(toInspect), isRecursive, appendInspected);
+							else 
+								val = null;
 							val = "Inspected Inner Object";
 						}
+					    //If not => print hash code.
 						else
 						{
-							//If not => print hash code.
-							try {
-								if (f[i].get(toInspect) != null)
-									val = f[i].get(toInspect).hashCode();
-							} catch (IllegalArgumentException | IllegalAccessException e) {
-								e.printStackTrace();
-							}
+							if (f[i].get(toInspect) != null)
+								val = f[i].get(toInspect).hashCode();
 						}
-			
-						
+					
 					}
-					if (val != null)
-						System.out.println(tabOver+"Field Value: "+val.toString());
-					else 
-						System.out.println(tabOver+"Field Value is null.");
+					
+				if (val != null)
+					System.out.println(tabOver+"Field Value: "+val.toString());
+				else 
+					System.out.println(tabOver+"Field Value is null.");
 				}
 			}
-
+			 catch (IllegalArgumentException | IllegalAccessException e) {
+					e.printStackTrace();
+			}
+		}
 	}
 	
 	//Get the Base Non-Recursive Value of an object regardless what it is. 
@@ -428,13 +379,12 @@ public class ObjectInspector {
 		} else if (classObj.isArray()) {
 			// Must be able to handle arrays (names, component Type, length, all contents)
 			try {
-				Array arrayObj = ((Array) toGetVal);
 				System.out.println("\tArray Name: " + toGetVal.getClass().getName());
-				System.out.println("\tArray Length: " + Array.getLength(arrayObj));
+				System.out.println("\tArray Length: " + Array.getLength(toGetVal));
 				System.out.println("\tArray Component Type: " + Array.class.getComponentType().getName());
 				System.out.println("\tArray Contents:");
-				for (int index = 0; index < Array.getLength(arrayObj); index++) {
-					Object obj = Array.get(arrayObj, index);
+				for (int index = 0; index < Array.getLength(toGetVal); index++) {
+					Object obj = Array.get(toGetVal, index);
 					if (obj != null)
 						val = getNonRecursiveValue(obj);
 					System.out.println("\tArray Index: " + index + " Value: " + val);
