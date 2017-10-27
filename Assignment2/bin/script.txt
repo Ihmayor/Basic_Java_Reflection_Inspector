@@ -17,7 +17,7 @@ Method Name: 	clone
 Method Name: 	notify
 Method Name: 	notifyAll
 Method Name: 	registerNatives
-Declared Constructor Num: 1
+Declared Constructor Amount: 1
 Constructor Modifier (int): 	1
 Constructor Modifier (string): 	public
 
@@ -26,7 +26,7 @@ Constructor Modifier (string): 	public
 
 
 
-Declared Constructor Num: 0
+Declared Fields Amount: 0
 This superclass extends no superclass
 ======================================================
 Finished Inspecting SuperClass
@@ -37,11 +37,11 @@ Finished Inspecting SuperClass
 Implemented Interface: java.io.Serializable
 Inspecting Interface
 ===================================================
-Declared Constructors Num: 0
+Declared Constructors Amount: 0
 =============================================================================
 
 
-Declared Fields Num: 0
+Declared Fields Amount: 0
 =============================================================================
 ======================================================
 Finished Inspecting Interface
@@ -50,11 +50,11 @@ Implemented Interface: java.lang.Runnable
 Inspecting Interface
 ===================================================
 Method Name: 	run
-Declared Constructors Num: 0
+Declared Constructors Amount: 0
 =============================================================================
 
 
-Declared Fields Num: 0
+Declared Fields Amount: 0
 =============================================================================
 ======================================================
 Finished Inspecting Interface
@@ -134,15 +134,15 @@ Declared Fields of Class
 =============================================
 Field Name: 	val
 Field Type: 	int
-Field Value: 3
+Field Value is null.
 =============================================
 Field Name: 	val2
 Field Type: 	double
-Field Value: 0.2
+Field Value is null.
 =============================================
 Field Name: 	val3
 Field Type: 	boolean
-Field Value: true
+Field Value is null.
 ======================================================
 ======================================================
 Running Test: ClassA
@@ -162,7 +162,7 @@ Method Name: 	clone
 Method Name: 	notify
 Method Name: 	notifyAll
 Method Name: 	registerNatives
-Declared Constructor Num: 1
+Declared Constructor Amount: 1
 Constructor Modifier (int): 	1
 Constructor Modifier (string): 	public
 
@@ -171,7 +171,7 @@ Constructor Modifier (string): 	public
 
 
 
-Declared Constructor Num: 0
+Declared Fields Amount: 0
 This superclass extends no superclass
 ======================================================
 Finished Inspecting SuperClass
@@ -182,11 +182,11 @@ Finished Inspecting SuperClass
 Implemented Interface: java.io.Serializable
 Inspecting Interface
 ===================================================
-Declared Constructors Num: 0
+Declared Constructors Amount: 0
 =============================================================================
 
 
-Declared Fields Num: 0
+Declared Fields Amount: 0
 =============================================================================
 ======================================================
 Finished Inspecting Interface
@@ -195,11 +195,11 @@ Implemented Interface: java.lang.Runnable
 Inspecting Interface
 ===================================================
 Method Name: 	run
-Declared Constructors Num: 0
+Declared Constructors Amount: 0
 =============================================================================
 
 
-Declared Fields Num: 0
+Declared Fields Amount: 0
 =============================================================================
 ======================================================
 Finished Inspecting Interface
@@ -279,15 +279,15 @@ Declared Fields of Class
 =============================================
 Field Name: 	val
 Field Type: 	int
-Field Value: 12
+Field Value is null.
 =============================================
 Field Name: 	val2
 Field Type: 	double
-Field Value: 0.2
+Field Value is null.
 =============================================
 Field Name: 	val3
 Field Type: 	boolean
-Field Value: true
+Field Value is null.
 ======================================================
 ======================================================
 Running Test: ClassB
@@ -297,11 +297,11 @@ Inspecting Superclass
 ===================================================
 Method Name: 	run
 Method Name: 	toString
+Method Name: 	func3
 Method Name: 	func0
 Method Name: 	func1
 Method Name: 	func2
-Method Name: 	func3
-Declared Constructor Num: 2
+Declared Constructor Amount: 2
 Constructor Modifier (int): 	1
 Constructor Modifier (string): 	public
 
@@ -316,13 +316,13 @@ Constructor Modifier (string): 	public
 
 
 
-Declared Constructor Num: 3
+Declared Fields Amount: 3
 Field Name:	val2
-Field Value:	987405879
+Field Value:	1112280004
 Field Name:	val3
-Field Value:	1555845260
+Field Value:	1013423070
 Field Name:	val4
-Field Value:	874088044
+Field Value:	380936215
 =====================================================
 Exploring SuperClass of Super Class ClassC
 Immediate Superclass:	java.lang.Object
@@ -340,7 +340,7 @@ Method Name: 	clone
 Method Name: 	notify
 Method Name: 	notifyAll
 Method Name: 	registerNatives
-Declared Constructor Num: 1
+Declared Constructor Amount: 1
 Constructor Modifier (int): 	1
 Constructor Modifier (string): 	public
 
@@ -349,7 +349,7 @@ Constructor Modifier (string): 	public
 
 
 
-Declared Constructor Num: 0
+Declared Fields Amount: 0
 This superclass extends no superclass
 ======================================================
 Finished Inspecting SuperClass
@@ -365,11 +365,11 @@ Implemented Interface: java.lang.Runnable
 Inspecting Interface
 ===================================================
 Method Name: 	run
-Declared Constructors Num: 0
+Declared Constructors Amount: 0
 =============================================================================
 
 
-Declared Fields Num: 0
+Declared Fields Amount: 0
 =============================================================================
 ======================================================
 Finished Inspecting Interface
@@ -593,7 +593,7 @@ Method Name: 	clone
 Method Name: 	notify
 Method Name: 	notifyAll
 Method Name: 	registerNatives
-Declared Constructor Num: 1
+Declared Constructor Amount: 1
 Constructor Modifier (int): 	1
 Constructor Modifier (string): 	public
 
@@ -602,7 +602,7 @@ Constructor Modifier (string): 	public
 
 
 
-Declared Constructor Num: 0
+Declared Fields Amount: 0
 This superclass extends no superclass
 ======================================================
 Finished Inspecting SuperClass
@@ -735,7 +735,7 @@ Field Value: Inspected Inner Object
 =============================================
 Field Name: 	val3
 Field Type: 	int
-Field Value: 32
+Field Value is null.
 =============================================
 Field Name: 	vallarray
 Field Type: 	[LClassA;
@@ -763,6 +763,7 @@ vallarray
 	Index: 8 Val: null
 	===================================================
 	Index: 9 Val: null
+Field Value is null.
 ======================================================
 ======================================================
 Running Test: ClassD
@@ -782,7 +783,7 @@ Method Name: 	clone
 Method Name: 	notify
 Method Name: 	notifyAll
 Method Name: 	registerNatives
-Declared Constructor Num: 1
+Declared Constructor Amount: 1
 Constructor Modifier (int): 	1
 Constructor Modifier (string): 	public
 
@@ -791,7 +792,7 @@ Constructor Modifier (string): 	public
 
 
 
-Declared Constructor Num: 0
+Declared Fields Amount: 0
 This superclass extends no superclass
 ======================================================
 Finished Inspecting SuperClass
@@ -924,7 +925,7 @@ Field Value: Inspected Inner Object
 =============================================
 Field Name: 	val3
 Field Type: 	int
-Field Value: 34
+Field Value is null.
 =============================================
 Field Name: 	vallarray
 Field Type: 	[LClassA;
@@ -952,9 +953,10 @@ vallarray
 	Index: 8 Val: null
 	===================================================
 	Index: 9 Val: null
+Field Value is null.
 ======================================================
 ======================================================
-Running Test: [LClassB;@6c629d6e
+Running Test: [LClassB;@68fb2c38
 Declaring Class:	[LClassB;
 Immediate Superclass:	java.lang.Object
 Inspecting Superclass
@@ -971,7 +973,7 @@ Method Name: 	clone
 Method Name: 	notify
 Method Name: 	notifyAll
 Method Name: 	registerNatives
-Declared Constructor Num: 1
+Declared Constructor Amount: 1
 Constructor Modifier (int): 	1
 Constructor Modifier (string): 	public
 
@@ -980,7 +982,7 @@ Constructor Modifier (string): 	public
 
 
 
-Declared Constructor Num: 0
+Declared Fields Amount: 0
 This superclass extends no superclass
 ======================================================
 Finished Inspecting SuperClass
@@ -991,11 +993,11 @@ Finished Inspecting SuperClass
 Implemented Interface: java.lang.Cloneable
 Inspecting Interface
 ===================================================
-Declared Constructors Num: 0
+Declared Constructors Amount: 0
 =============================================================================
 
 
-Declared Fields Num: 0
+Declared Fields Amount: 0
 =============================================================================
 ======================================================
 Finished Inspecting Interface
@@ -1003,11 +1005,11 @@ This superinterface implements no other superinterfaces
 Implemented Interface: java.io.Serializable
 Inspecting Interface
 ===================================================
-Declared Constructors Num: 0
+Declared Constructors Amount: 0
 =============================================================================
 
 
-Declared Fields Num: 0
+Declared Fields Amount: 0
 =============================================================================
 ======================================================
 Finished Inspecting Interface
@@ -1026,7 +1028,7 @@ Declared Constructors Amount: 0
 Declared Fields of Class
 ======================================================
 ======================================================
-Running Test: [[LClassB;@3f102e87
+Running Test: [[LClassB;@2eafffde
 Declaring Class:	[[LClassB;
 Immediate Superclass:	java.lang.Object
 Inspecting Superclass
@@ -1043,7 +1045,7 @@ Method Name: 	clone
 Method Name: 	notify
 Method Name: 	notifyAll
 Method Name: 	registerNatives
-Declared Constructor Num: 1
+Declared Constructor Amount: 1
 Constructor Modifier (int): 	1
 Constructor Modifier (string): 	public
 
@@ -1052,7 +1054,7 @@ Constructor Modifier (string): 	public
 
 
 
-Declared Constructor Num: 0
+Declared Fields Amount: 0
 This superclass extends no superclass
 ======================================================
 Finished Inspecting SuperClass
@@ -1063,11 +1065,11 @@ Finished Inspecting SuperClass
 Implemented Interface: java.lang.Cloneable
 Inspecting Interface
 ===================================================
-Declared Constructors Num: 0
+Declared Constructors Amount: 0
 =============================================================================
 
 
-Declared Fields Num: 0
+Declared Fields Amount: 0
 =============================================================================
 ======================================================
 Finished Inspecting Interface
@@ -1075,11 +1077,11 @@ This superinterface implements no other superinterfaces
 Implemented Interface: java.io.Serializable
 Inspecting Interface
 ===================================================
-Declared Constructors Num: 0
+Declared Constructors Amount: 0
 =============================================================================
 
 
-Declared Fields Num: 0
+Declared Fields Amount: 0
 =============================================================================
 ======================================================
 Finished Inspecting Interface
@@ -1115,7 +1117,7 @@ Method Name: 	clone
 Method Name: 	notify
 Method Name: 	notifyAll
 Method Name: 	registerNatives
-Declared Constructor Num: 1
+Declared Constructor Amount: 1
 Constructor Modifier (int): 	1
 Constructor Modifier (string): 	public
 
@@ -1124,7 +1126,7 @@ Constructor Modifier (string): 	public
 
 
 
-Declared Constructor Num: 0
+Declared Fields Amount: 0
 This superclass extends no superclass
 ======================================================
 Finished Inspecting SuperClass
@@ -1135,11 +1137,11 @@ Finished Inspecting SuperClass
 Implemented Interface: java.io.Serializable
 Inspecting Interface
 ===================================================
-Declared Constructors Num: 0
+Declared Constructors Amount: 0
 =============================================================================
 
 
-Declared Fields Num: 0
+Declared Fields Amount: 0
 =============================================================================
 ======================================================
 Finished Inspecting Interface
@@ -1148,11 +1150,11 @@ Implemented Interface: java.lang.Comparable
 Inspecting Interface
 ===================================================
 Method Name: 	compareTo
-Declared Constructors Num: 0
+Declared Constructors Amount: 0
 =============================================================================
 
 
-Declared Fields Num: 0
+Declared Fields Amount: 0
 =============================================================================
 ======================================================
 Finished Inspecting Interface
@@ -1168,11 +1170,11 @@ Method Name: 	chars
 Method Name: 	codePoints
 Method Name: 	lambda$chars$0
 Method Name: 	lambda$codePoints$1
-Declared Constructors Num: 0
+Declared Constructors Amount: 0
 =============================================================================
 
 
-Declared Fields Num: 0
+Declared Fields Amount: 0
 =============================================================================
 ======================================================
 Finished Inspecting Interface
@@ -5050,22 +5052,23 @@ value
 		Constructor Modifier (string): 	public
 
 
+Field Value is null.
 =============================================
 Field Name: 	coder
 Field Type: 	byte
-Field Value: 0
+Field Value is null.
 =============================================
 Field Name: 	hash
 Field Type: 	int
-Field Value: 432811871
+Field Value is null.
 =============================================
 Field Name: 	serialVersionUID
 Field Type: 	long
-Field Value: -6849794470754667710
+Field Value is null.
 =============================================
 Field Name: 	COMPACT_STRINGS
 Field Type: 	boolean
-Field Value: true
+Field Value is null.
 =============================================
 Field Name: 	serialPersistentFields
 Field Type: 	[Ljava.io.ObjectStreamField;
@@ -5073,6 +5076,7 @@ serialPersistentFields
 	Array Length: 0
 	Array Component Type: java.io.ObjectStreamField
 	Array Contents:
+Field Value is null.
 =============================================
 Field Name: 	CASE_INSENSITIVE_ORDER
 Field Type: 	java.util.Comparator
@@ -5135,9 +5139,9 @@ Field Value: Inspected Inner Object
 =============================================
 Field Name: 	LATIN1
 Field Type: 	byte
-Field Value: 0
+Field Value is null.
 =============================================
 Field Name: 	UTF16
 Field Type: 	byte
-Field Value: 1
+Field Value is null.
 ======================================================

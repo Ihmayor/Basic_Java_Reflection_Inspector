@@ -218,6 +218,28 @@ class TestObjectInspector {
 		assertEquals(expected, outContent.toString());
 	}
 
+	@Test
+	public void testGetPrimitiveValue()
+	{
+		ObjectInspector inspector = new ObjectInspector();
+		String typeName = "int";
+		Object testVal = 0;
+		int expected = 0;
+		Object actual = inspector.getPrimitiveValue(typeName, testVal);
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	public void testGetPrimitiveValueViaWrapper()
+	{
+		ObjectInspector inspector = new ObjectInspector();
+		String typeName = "int";
+		Integer testVal = new Integer(1);
+		int expected = 1;
+		Object actual = inspector.getPrimitiveValue(typeName, testVal);
+		assertEquals(expected,actual);
+	}
+	
 	
 	////////////////////Test Objects/////////////////////////////
 	

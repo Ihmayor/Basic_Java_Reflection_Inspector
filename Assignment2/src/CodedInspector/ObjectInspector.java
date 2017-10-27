@@ -1,5 +1,4 @@
 package CodedInspector;
-
 import java.lang.reflect.Array;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -268,67 +267,7 @@ public class ObjectInspector {
 					{	
 						try 
 						{
-
-							switch(f[i].getType().getName())
-							{
-								case "Double":
-									val = f[i].getDouble(toInspect);
-									break;
-								case "double":
-									val = f[i].get(toInspect);
-									break;
-								case "Integer":
-									val = f[i].getInt(toInspect);
-									break;
-								case "int":
-									val = f[i].get(toInspect);
-									break;
-							    case "Void":
-									val = ((Void)toInspect).toString();
-									break;
-								case "void":
-									val = f[i].get(toInspect);
-									break;
-								case "Float":
-									val = f[i].getFloat(toInspect);
-									break;
-								case "float":
-									val = f[i].get(toInspect);
-									break;
-								case "Boolean":
-									val = f[i].getBoolean(toInspect);
-									break;
-								case "boolean":
-									val = f[i].get(toInspect);
-									break;
-								case "Character":
-									val = f[i].getChar(toInspect);
-									break;
-								case "char":
-									val = f[i].get(toInspect);
-									break;
-								case "Long":
-									val = f[i].getLong(toInspect);
-									break;
-								case "long":
-									val = f[i].get(toInspect);
-									break;
-								case "Short":
-									val = f[i].getShort(toInspect);
-									break;
-								case "short":
-									val = f[i].get(toInspect);
-									break;
-								case "Byte":
-									val = f[i].getByte(toInspect);
-									break;
-								case "byte":
-									val = f[i].get(toInspect);
-									break;
-								default:
-									val = "Unattained";
-									break;
-							}
+							val = getPrimitiveValue(f[i].getType().getName(),f[i].get(toInspect));
 						}
 						 catch (IllegalArgumentException | IllegalAccessException e) {
 								e.printStackTrace();
@@ -417,43 +356,13 @@ public class ObjectInspector {
 
 	}
 
+	//Get the Base Non-Recursive Value of an object regardless what it is. 
 	public Object getNonRecursiveValue(Object toGetVal) {
 		Object val = null;
 		Class classObj = toGetVal.getClass();
 		if (classObj.isPrimitive()) {
 			try {
-				switch (classObj.getName()) {
-				case "Double":
-					val = ((Double) toGetVal).doubleValue();
-					break;
-				case "Integer":
-					val = ((Double) toGetVal).doubleValue();
-					break;
-				case "Void":
-					val = ((Double) toGetVal).doubleValue();
-					break;
-				case "Float":
-					val = ((Double) toGetVal).doubleValue();
-					break;
-				case "Boolean":
-					val = ((Double) toGetVal).doubleValue();
-					break;
-				case "Char":
-					val = ((Double) toGetVal).doubleValue();
-					break;
-				case "Long":
-					val = ((Double) toGetVal).doubleValue();
-					break;
-				case "Short":
-					val = ((Double) toGetVal).doubleValue();
-					break;
-				case "Byte":
-					val = ((Double) toGetVal).doubleValue();
-					break;
-				default:
-					val = "Unattained";
-					break;
-				}
+				val = getPrimitiveValue(classObj.getName(), toGetVal);
 			} catch (IllegalArgumentException e) {
 				e.printStackTrace();
 			}
@@ -486,6 +395,69 @@ public class ObjectInspector {
 		return val;
 	}
 
+	public Object getPrimitiveValue(String typeName, Object toGetVal)
+	{
+		Object val = "No Value";
+		switch (typeName) {
+		case "Double":
+			val = ((Double) toGetVal).doubleValue();
+			break;
+		case "double":
+			val = (double)toGetVal;
+			break;
+		case "Integer":
+			val = ((Integer) toGetVal).intValue();
+			break;
+		case "int":
+			val = (int)toGetVal;
+			break;
+		case "void":
+		case "Void":
+			val = ((Void) toGetVal);
+			break;
+		case "Float":
+			val = ((Float) toGetVal).floatValue();
+			break;
+		case "float":
+			val = (float)toGetVal;
+			break;
+		case "Boolean":
+			val = ((Boolean) toGetVal).booleanValue();
+			break;
+		case "boolean":
+			val = (boolean)toGetVal;
+			break;
+		case "Character":
+			val = ((Character) toGetVal).charValue();
+			break;
+		case "char":
+			val = (char)toGetVal;
+			break;
+		case "Long":
+			val = ((Long) toGetVal).longValue();
+			break;
+		case "long":
+			val = (long)toGetVal;
+			break;
+		case "Short":
+			val = ((Short) toGetVal).shortValue();
+			break;
+		case "short":
+			val = (short)toGetVal;
+			break;
+		case "Byte":
+			val = ((Byte) toGetVal).byteValue();
+			break;
+		case "byte":
+			val = (byte)toGetVal;
+			break;
+		default:
+			val = "Unattained";
+			break;
+		}
+		return val;
+	}
+	
 	// Method to inspected recursively w/o worry about stack overflow
 	public void inspectRecursive(Object toInspect, boolean isRecursive, int[] alreadyInspected) {
 		if (isInspected(toInspect.hashCode(), alreadyInspected))
