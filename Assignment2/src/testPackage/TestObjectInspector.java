@@ -1,4 +1,4 @@
-package CodedInspector;
+package testPackage;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -24,7 +24,7 @@ class TestObjectInspector {
 		//Byte Array output MUST BE started out here to work. Has been tested when placed in @Before and @After
 		ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	    System.setOut(new PrintStream(outContent));
-		ObjectInspector inspector = new ObjectInspector();
+		Inspector inspector = new Inspector();
 		TestObject2 test = new TestObject2();
 		test.field1 = 0;
 		test.field2 = "Blah";
@@ -108,7 +108,7 @@ class TestObjectInspector {
 		//Arrange
 		ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	    System.setOut(new PrintStream(outContent));
-		ObjectInspector inspector = new ObjectInspector();
+		Inspector inspector = new Inspector();
 
 		TestObject1 test =  new TestObject1();
 		inspector.inspectSuperInterface(test);
@@ -140,7 +140,7 @@ class TestObjectInspector {
 		//Arrange
 				ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 			    System.setOut(new PrintStream(outContent));
-				ObjectInspector inspector = new ObjectInspector();
+				Inspector inspector = new Inspector();
 				TestObject test =  new TestObject();
 				test.field1 = 0;
 				test.field2 = "test";
@@ -170,7 +170,7 @@ class TestObjectInspector {
 			//Arrange
 			ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 		    System.setOut(new PrintStream(outContent));
-			ObjectInspector inspector = new ObjectInspector();
+			Inspector inspector = new Inspector();
 
 			TestObject test =  new TestObject();
 			inspector.inspectFields(test, test.getClass(), false, new int [] {});
@@ -199,7 +199,7 @@ class TestObjectInspector {
 		//Arrange
 		ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	    System.setOut(new PrintStream(outContent));
-		ObjectInspector inspector = new ObjectInspector();
+		Inspector inspector = new Inspector();
 
 		TestObject3 test =  new TestObject3();
 		test.field9 = new int[] {1,2,3};
@@ -232,7 +232,7 @@ class TestObjectInspector {
 	@Test
 	public void testGetPrimitiveValue()
 	{
-		ObjectInspector inspector = new ObjectInspector();
+		Inspector inspector = new Inspector();
 		String typeName = "int";
 		Object testVal = 0;
 		int expected = 0;
@@ -243,7 +243,7 @@ class TestObjectInspector {
 	@Test
 	public void testGetPrimitiveValueViaWrapper()
 	{
-		ObjectInspector inspector = new ObjectInspector();
+		Inspector inspector = new Inspector();
 		String typeName = "int";
 		Integer testVal = new Integer(1);
 		int expected = 1;

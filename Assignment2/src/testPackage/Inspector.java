@@ -1,4 +1,4 @@
-package CodedInspector;
+package testPackage;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.Constructor;
@@ -7,7 +7,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-public class ObjectInspector {
+public class Inspector {
 
 	//Base Inspect Method to be called by the driver
 	public void inspect(Object toInspect, boolean isRecursive) {
